@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>hello</title>
-      <link href="/2020/06/14/hello/"/>
-      <url>/2020/06/14/hello/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title>hello</title>
+    <url>/2020/06/14/hello/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>C++ Primer读书笔记(一) 变量与基本类型</title>
+    <url>/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>读书笔记</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>编程语言</tag>
+      </tags>
+  </entry>
 </search>
