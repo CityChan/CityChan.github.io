@@ -1,63 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>leetcode(1) Greedy</title>
-      <link href="/2020/06/15/leetcode(1)-Greedy/"/>
-      <url>/2020/06/15/leetcode(1)-Greedy/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><font face="微软雅黑">This series if articles are written for sovling problems in leetcode.</font><h2 id="455-Assign-Cookies-easy"><a href="#455-Assign-Cookies-easy" class="headerlink" title="455 Assign Cookies (easy)"></a>455 Assign Cookies (easy)</h2><font face="微软雅黑">Problem description:  **Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.**  Note:You may assume the greed factor is always positive.You cannot assign more than one cookie to one child.    Thinking:  This problem is easy. We just fulfill the child who has lower greedy factor with the least size cookie which could fulfill this child. Therefore, we need to sort the two arrays first and then it is easy.  Solution:  <pre>class Solution {    public int findContentChildren(int[] g, int[] s) {        Arrays.sort(g);        Arrays.sort(s);        int child = 0;        int cookie = 0;        while((child<g.length)&&(cookie<s.length)){            if(g[child]<=s[cookie]) child++;            cookie++;        }        return child;    }}</pre></font>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>leetcode(1) Greedy</title>
+    <url>/2020/06/15/leetcode(1)-Greedy/</url>
+    <content><![CDATA[<h1 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h1><font face="微软雅黑">
+This series if articles are written for sovling problems in leetcode.
+</font>
+
+
+<h2 id="455-Assign-Cookies-easy"><a href="#455-Assign-Cookies-easy" class="headerlink" title="455 Assign Cookies (easy)"></a>455 Assign Cookies (easy)</h2><font face="微软雅黑">
+Problem description:
+<br/>**Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.**
+<br/>Note:
+You may assume the greed factor is always positive.
+You cannot assign more than one cookie to one child.    <br/>Thinking:
+<br/>This problem is easy. We just fulfill the child who has lower greedy factor with the least size cookie which could fulfill this child. Therefore, we need to sort the two arrays first and then it is easy.
+<br/>Solution: 
+</font> 
+
+<pre>
+class Solution {
+    public int findContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
+        int child = 0;
+        int cookie = 0;
+        while(child< g.length && cookie< s.length){
+            if(g[child]<=s[cookie]) child++;
+            cookie++;
+        }
+        return child;
+    }
+}
+</pre>]]></content>
       <categories>
-          
-          <category> algorithm </category>
-          
+        <category>algorithm</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> C++ </tag>
-            
-            <tag> leetcode </tag>
-            
-            <tag> java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>C++ Primer读书笔记(一) 变量与基本类型</title>
-      <link href="/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/"/>
-      <url>/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><font face="微软雅黑">因为要做C++课程TA的原因，我被迫重新复习一遍好久没用过的C++。自从用了python，不再需要处理指针和内存，也不用考虑抽象的虚函数和多继承，虽然编程效率提高不少，但是总感觉失去了什么东西。因此，今天重新翻开《C++ primer》, 再次拥抱C++。</font><h2 id="2-1基本内置类型"><a href="#2-1基本内置类型" class="headerlink" title="2.1基本内置类型"></a>2.1基本内置类型</h2><font face="微软雅黑">C++是严格类型的编程语言，使用一个变量前必须强调其类型。</font><h3 id="2-1-1主要算数类型"><a href="#2-1-1主要算数类型" class="headerlink" title="2.1.1主要算数类型"></a>2.1.1主要算数类型</h3><font face="微软雅黑">bool 布尔型 1位  char 字符型 8位（1字节）  int  整型 32位（常用）  float 浮点型 6位有效数字  double 双精度浮点型 10位有效数字（常用）  <p>除了bool变量和其他拓展变量类型，其他整型可以划分为带符号和无符号两种。<br></font></p><h3 id="2-1-2强制类型转换"><a href="#2-1-2强制类型转换" class="headerlink" title="2.1.2强制类型转换"></a>2.1.2强制类型转换</h3><font face="微软雅黑">赋予一个变量不属于他类型的值，会把这个值强行转化为当前类型  例如： int x = 2.1; //实际上x的值变成了2</font><h3 id="2-1-3特殊保留字符"><a href="#2-1-3特殊保留字符" class="headerlink" title="2.1.3特殊保留字符"></a>2.1.3特殊保留字符</h3><font face="微软雅黑">换行符 \n    制表符 \t   双引号 \"  单引号 \'    反斜线 \\    回车 \r</font><h2 id="2-2变量"><a href="#2-2变量" class="headerlink" title="2.2变量"></a>2.2变量</h2><font face="微软雅黑">变量的声明，初始化。没什么特别</font><h3 id="2-2-1定义"><a href="#2-2-1定义" class="headerlink" title="2.2.1定义"></a>2.2.1定义</h3><font face="微软雅黑">变量的声明和定义应该区分开，声明(declaration)是使得名字被程序所知，而定义(definition)则是创建与名字相对应的实体。  前面加extern并且不初始化，则为声明,没有定义。一个变量仅能被定义一次，但是可以声明无数次。  </font><h3 id="2-2-2命名规范"><a href="#2-2-2命名规范" class="headerlink" title="2.2.2命名规范"></a>2.2.2命名规范</h3><font face="微软雅黑">  标识符用数字，字母以及下划线组成。  1.标识符能够体现实际含义，如index  2.变量用小写字母，用户自定义类用大写字母开头，如Class  3.多个单词组合用_进行分割  4.数字不能在第一个位置   <p>常见保留关键字：<br>try(异常捕捉) union(一种类型) unsigned（非符号）<br>using（使用命名空间） virtual（虚态）static(静态) throw（抛异常）<br>goto（无条件跳转，慎用）inline（内联）namespace（命名空间）<br>operator（操作符）enum（枚举）<br></font></p><h3 id="2-2-3作用域"><a href="#2-2-3作用域" class="headerlink" title="2.2.3作用域"></a>2.2.3作用域</h3><font face="微软雅黑">一个变量，函数，类有他的作用域，一般用花括号包含，在作用域之外不被认知。作用域分为全局作用域(global scope)和块作用域(block scope)。内层(inner)作用域会覆盖外层(outer)作用域。</font><h2 id="2-3复合类型"><a href="#2-3复合类型" class="headerlink" title="2.3复合类型"></a>2.3复合类型</h2><h3 id="2-3-1引用-reference"><a href="#2-3-1引用-reference" class="headerlink" title="2.3.1引用(reference)"></a>2.3.1引用(reference)</h3><font face="微软雅黑">用'&'符号来定义引用类型：  int ival = 1024;  int &refval = ival;  </font><font face="微软雅黑" color=red>引用必须被初始化！初始化的对象要相匹配，而且不能是常数。</font><font face="微软雅黑">初始化之后，refval就是ival的化身，两者绑定在一起。</font><h3 id="2-3-2指针-pointer"><a href="#2-3-2指针-pointer" class="headerlink" title="2.3.2指针(pointer)"></a>2.3.2指针(pointer)</h3><font face="微软雅黑">万恶之源。指针让程序员获得操作内存的能力，也让C++程序陷入bug的泥潭。用'*'*定义一个指针变量，同时也用*'*'去访问指针指向的对象。int *ip;  ip是指向int类变量的指针。定义指针时可以先不初始化。  int ip = &ival;用'&'取址，容易与引用混淆。  指针值应该属于4种状态之一：  1.指向一个对象  2.指向紧邻对象所占空间的下一个位置  3.空指针(nullptr,NULL)4.无效指针</font><h2 id="2-4const限定符"><a href="#2-4const限定符" class="headerlink" title="2.4const限定符"></a>2.4const限定符</h2>]]></content>
-      
-      
+      <tags>
+        <tag>leetcode</tag>
+        <tag>java</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C++ Primer读书笔记(一) 变量与基本类型</title>
+    <url>/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><font face="微软雅黑">
+因为要做C++课程TA的原因，我被迫重新复习一遍好久没用过的C++。自从用了python，不再需要处理指针和内存，也不用考虑抽象的虚函数和多继承，虽然编程效率提高不少，但是总感觉失去了什么东西。因此，今天重新翻开《C++ primer》, 再次拥抱C++。
+</font>
+
+<h2 id="2-1基本内置类型"><a href="#2-1基本内置类型" class="headerlink" title="2.1基本内置类型"></a>2.1基本内置类型</h2><font face="微软雅黑">
+C++是严格类型的编程语言，使用一个变量前必须强调其类型。
+</font>
+
+<h3 id="2-1-1主要算数类型"><a href="#2-1-1主要算数类型" class="headerlink" title="2.1.1主要算数类型"></a>2.1.1主要算数类型</h3><font face="微软雅黑">
+bool 布尔型 1位  
+char 字符型 8位（1字节）  
+int  整型 32位（常用）  
+float 浮点型 6位有效数字  
+double 双精度浮点型 10位有效数字（常用）  
+
+<p>除了bool变量和其他拓展变量类型，其他整型可以划分为带符号和无符号两种。<br></font></p>
+<h3 id="2-1-2强制类型转换"><a href="#2-1-2强制类型转换" class="headerlink" title="2.1.2强制类型转换"></a>2.1.2强制类型转换</h3><font face="微软雅黑">
+赋予一个变量不属于他类型的值，会把这个值强行转化为当前类型  
+例如： int x = 2.1; //实际上x的值变成了2
+</font>
+
+<h3 id="2-1-3特殊保留字符"><a href="#2-1-3特殊保留字符" class="headerlink" title="2.1.3特殊保留字符"></a>2.1.3特殊保留字符</h3><font face="微软雅黑">
+换行符 \n  &emsp;&emsp;制表符 \t &emsp;&emsp;双引号 \"  
+单引号 \'  &emsp;&emsp;反斜线 \\\    &emsp;&emsp;&emsp;回车 \r
+</font>
+
+<h2 id="2-2变量"><a href="#2-2变量" class="headerlink" title="2.2变量"></a>2.2变量</h2><font face="微软雅黑">
+变量的声明，初始化。没什么特别
+</font>
+
+<h3 id="2-2-1定义"><a href="#2-2-1定义" class="headerlink" title="2.2.1定义"></a>2.2.1定义</h3><font face="微软雅黑">
+变量的声明和定义应该区分开，声明(declaration)是使得名字被程序所知，而定义(definition)则是创建与名字相对应的实体。  
+前面加extern并且不初始化，则为声明,没有定义。一个变量仅能被定义一次，但是可以声明无数次。  
+</font>
+
+<h3 id="2-2-2命名规范"><a href="#2-2-2命名规范" class="headerlink" title="2.2.2命名规范"></a>2.2.2命名规范</h3><font face="微软雅黑">  
+标识符用数字，字母以及下划线组成。  
+1.标识符能够体现实际含义，如index  
+2.变量用小写字母，用户自定义类用大写字母开头，如Class  
+3.多个单词组合用_进行分割  
+4.数字不能在第一个位置   
+
+<p>常见保留关键字：<br>try(异常捕捉) union(一种类型) unsigned（非符号）<br>using（使用命名空间） virtual（虚态）static(静态) throw（抛异常）<br>goto（无条件跳转，慎用）inline（内联）namespace（命名空间）<br>operator（操作符）enum（枚举）<br></font></p>
+<h3 id="2-2-3作用域"><a href="#2-2-3作用域" class="headerlink" title="2.2.3作用域"></a>2.2.3作用域</h3><font face="微软雅黑">
+一个变量，函数，类有他的作用域，一般用花括号包含，在作用域之外不被认知。作用域分为全局作用域(global scope)和块作用域(block scope)。内层(inner)作用域会覆盖外层(outer)作用域。
+</font>
+
+<h2 id="2-3复合类型"><a href="#2-3复合类型" class="headerlink" title="2.3复合类型"></a>2.3复合类型</h2><h3 id="2-3-1引用-reference"><a href="#2-3-1引用-reference" class="headerlink" title="2.3.1引用(reference)"></a>2.3.1引用(reference)</h3><font face="微软雅黑">
+用'&'符号来定义引用类型：  
+int ival = 1024;  
+int &refval = ival;  
+</font>
+<font face="微软雅黑" color=red>
+引用必须被初始化！初始化的对象要相匹配，而且不能是常数。
+</font>
+<font face="微软雅黑">
+初始化之后，refval就是ival的化身，两者绑定在一起。
+</font>
+
+<h3 id="2-3-2指针-pointer"><a href="#2-3-2指针-pointer" class="headerlink" title="2.3.2指针(pointer)"></a>2.3.2指针(pointer)</h3><font face="微软雅黑">
+万恶之源。指针让程序员获得操作内存的能力，也让C++程序陷入bug的泥潭。用'*'*定义一个指针变量，同时也用*'*'去访问指针指向的对象。
+int *ip;  
+ip是指向int类变量的指针。定义指针时可以先不初始化。  
+int ip = &ival;
+用'&'取址，容易与引用混淆。  
+指针值应该属于4种状态之一：  
+1.指向一个对象  
+2.指向紧邻对象所占空间的下一个位置  
+3.空指针(nullptr,NULL)
+4.无效指针
+</font>
+
+<h2 id="2-4const限定符"><a href="#2-4const限定符" class="headerlink" title="2.4const限定符"></a>2.4const限定符</h2>]]></content>
       <categories>
-          
-          <category> reading note </category>
-          
+        <category>reading note</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> C++ </tag>
-            
-            <tag> programming </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>C++</tag>
+        <tag>programming</tag>
+      </tags>
+  </entry>
 </search>
