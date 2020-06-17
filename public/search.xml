@@ -1,226 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>C++ Primer读书笔记(二) 字符串、向量和数组</title>
-    <url>/2020/06/16/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E5%90%91%E9%87%8F%E5%92%8C%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="3-1命名空间的using声明"><a href="#3-1命名空间的using声明" class="headerlink" title="3.1命名空间的using声明"></a>3.1命名空间的using声明</h2><font face="微软雅黑">
-目前我们使用的函数基本属于命名空间std，如果每次调用都用std::则比较繁琐，因此我们可以在程序开头声明:
-<br/>using namespacce std;
-<br/><font face="微软雅黑" color=red>头文件不应该包含using！否则会造成一些始料未及的错误。</font>
-</font>
-
-<h2 id="3-2标准库类型string"><a href="#3-2标准库类型string" class="headerlink" title="3.2标准库类型string"></a>3.2标准库类型string</h2><h3 id="3-2-1初始化"><a href="#3-2-1初始化" class="headerlink" title="3.2.1初始化"></a>3.2.1初始化</h3><font face="微软雅黑">
-1.拷贝初始化： string s1 = "hello";
-<br/>2.直接初始化： string s2("hello");
-</font>
-
-<h3 id="3-2-2操作"><a href="#3-2-2操作" class="headerlink" title="3.2.2操作"></a>3.2.2操作</h3><font face="微软雅黑">
-1.从字符串is中读取一行赋值给s： getline(is,s);
-<br/>2.判断s是否为空：s.emtpy();
-<br/>3.获得s的大小: s.size();
-<br/>4.连接s1和s2: s1+s2;
-</font>
-
-<h2 id="3-3标准库类型vector"><a href="#3-3标准库类型vector" class="headerlink" title="3.3标准库类型vector"></a>3.3标准库类型vector</h2><h3 id="3-3-1初始化"><a href="#3-3-1初始化" class="headerlink" title="3.3.1初始化"></a>3.3.1初始化</h3><font face="微软雅黑">
-vector是模板并非类，必须进行实例化。 
-<br/>vector < int> vi;
-</font>
-
-<h3 id="3-3-2vector操作"><a href="#3-3-2vector操作" class="headerlink" title="3.3.2vector操作"></a>3.3.2vector操作</h3><font face="微软雅黑">
-push_back(val);
-<br/>表示向容器push入一个对象val至尾端。  
-v.empty();  
-v.size();  
-类似string.
-</font>
-
-<h2 id="3-4迭代器"><a href="#3-4迭代器" class="headerlink" title="3.4迭代器"></a>3.4迭代器</h2><font face="微软雅黑">
-iterator是用于迭代的一个容器，有begin和end成员，用auto类型表示，用于表示首位置和最后位置。通常操作符：  
-= = 和 ! = 进行逻辑判断  
-*iter返回iter所指元素的引用  
-iter->mem，相当于(\*iter).mem
-</font>
-
-<h2 id="3-5数组"><a href="#3-5数组" class="headerlink" title="3.5数组"></a>3.5数组</h2><font face="微软雅黑">
-熟悉的数组,初始化的维度必须是常量。数组不允许拷贝和赋值，即不允许使用一个数组初始化另一个数组。  
-数组的第一个元素,nums[0]的地址即nums的值，即string *p2 = nums[0]相当于p2 = nums。
-</font>]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>C++ Primer读书笔记(二) 字符串、向量和数组</title>
+      <link href="/2020/06/16/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E5%90%91%E9%87%8F%E5%92%8C%E6%95%B0%E7%BB%84/"/>
+      <url>/2020/06/16/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E5%90%91%E9%87%8F%E5%92%8C%E6%95%B0%E7%BB%84/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="3-1命名空间的using声明"><a href="#3-1命名空间的using声明" class="headerlink" title="3.1命名空间的using声明"></a>3.1命名空间的using声明</h2><font face="微软雅黑">目前我们使用的函数基本属于命名空间std，如果每次调用都用std::则比较繁琐，因此我们可以在程序开头声明:<br/>using namespacce std;<br/><font face="微软雅黑" color=red>头文件不应该包含using！否则会造成一些始料未及的错误。</font></font><h2 id="3-2标准库类型string"><a href="#3-2标准库类型string" class="headerlink" title="3.2标准库类型string"></a>3.2标准库类型string</h2><h3 id="3-2-1初始化"><a href="#3-2-1初始化" class="headerlink" title="3.2.1初始化"></a>3.2.1初始化</h3><font face="微软雅黑">1.拷贝初始化： string s1 = "hello";<br/>2.直接初始化： string s2("hello");</font><h3 id="3-2-2操作"><a href="#3-2-2操作" class="headerlink" title="3.2.2操作"></a>3.2.2操作</h3><font face="微软雅黑">1.从字符串is中读取一行赋值给s： getline(is,s);<br/>2.判断s是否为空：s.emtpy();<br/>3.获得s的大小: s.size();<br/>4.连接s1和s2: s1+s2;</font><h2 id="3-3标准库类型vector"><a href="#3-3标准库类型vector" class="headerlink" title="3.3标准库类型vector"></a>3.3标准库类型vector</h2><h3 id="3-3-1初始化"><a href="#3-3-1初始化" class="headerlink" title="3.3.1初始化"></a>3.3.1初始化</h3><font face="微软雅黑">vector是模板并非类，必须进行实例化。 <br/>vector < int> vi;</font><h3 id="3-3-2vector操作"><a href="#3-3-2vector操作" class="headerlink" title="3.3.2vector操作"></a>3.3.2vector操作</h3><font face="微软雅黑">push_back(val);<br/>表示向容器push入一个对象val至尾端。  v.empty();  v.size();  类似string.</font><h2 id="3-4迭代器"><a href="#3-4迭代器" class="headerlink" title="3.4迭代器"></a>3.4迭代器</h2><font face="微软雅黑">iterator是用于迭代的一个容器，有begin和end成员，用auto类型表示，用于表示首位置和最后位置。通常操作符：  = = 和 ! = 进行逻辑判断  *iter返回iter所指元素的引用  iter->mem，相当于(\*iter).mem</font><h2 id="3-5数组"><a href="#3-5数组" class="headerlink" title="3.5数组"></a>3.5数组</h2><font face="微软雅黑">熟悉的数组,初始化的维度必须是常量。数组不允许拷贝和赋值，即不允许使用一个数组初始化另一个数组。  数组的第一个元素,nums[0]的地址即nums的值，即string *p2 = nums[0]相当于p2 = nums。</font>]]></content>
+      
+      
       <categories>
-        <category>reading note</category>
+          
+          <category> reading note </category>
+          
       </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>programming</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>每日一曲 Dreams</title>
-    <url>/2020/06/16/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B2-Dreams/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-    <div id="aplayer-CCmJIqMk" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="003Df68P3wAWvs" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
-    ></div>
-
-<font face="微软雅黑">
-去年的秋天，我听着这首小红莓的Dreams,漫步在广州上下九的街道上。那天，担忧已久的签证面试直接issued了，签证官对我说：“Have a nice trip.”这是一种从没有过的感觉，我终于有机会看看太平洋彼岸的世界。那里不是天堂，也不是地狱，是一个陌生的地方，我将在那里独自生活，一切从零开始。过去几年的迷茫，失望，惋惜仿佛都不复存在，因为从零开始已经没有什么可以失去了。广州的天气正好，我吃着老字号的双皮奶，艇仔粥，向朋友分享着好消息。
-Dolores的声音实在太好听，有一种空灵而迷幻的感觉。王菲早年正是模仿她的唱腔走红，但两者又不是同一种感觉。最早知道Cranberries是因为Zombies anti-war的歌，里面Dolores的声音非常坚定，强大，以至于我一开始没有意识到这两首歌是同一个人唱的。
-<br/>美好的午后过去后，那种喜悦的心情也不见了。在傍晚坐汽车回家，开始担心自己的未来学业，懊悔这几个月因为担心签证而没有好好利用的时光。人啊，真的太难获得一些真正身心愉悦的时刻了。
-</font>]]></content>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> programming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>每日一曲 Dreams</title>
+      <link href="/2020/06/16/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B2-Dreams/"/>
+      <url>/2020/06/16/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B2-Dreams/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-CCmJIqMk" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="003Df68P3wAWvs" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"    ></div><font face="微软雅黑">去年的秋天，我听着这首小红莓的Dreams,漫步在广州上下九的街道上。那天，担忧已久的签证面试直接issued了，签证官对我说：“Have a nice trip.”这是一种从没有过的感觉，我终于有机会看看太平洋彼岸的世界。那里不是天堂，也不是地狱，是一个陌生的地方，我将在那里独自生活，一切从零开始。过去几年的迷茫，失望，惋惜仿佛都不复存在，因为从零开始已经没有什么可以失去了。广州的天气正好，我吃着老字号的双皮奶，艇仔粥，向朋友分享着好消息。Dolores的声音实在太好听，有一种空灵而迷幻的感觉。王菲早年正是模仿她的唱腔走红，但两者又不是同一种感觉。最早知道Cranberries是因为Zombies anti-war的歌，里面Dolores的声音非常坚定，强大，以至于我一开始没有意识到这两首歌是同一个人唱的。<br/>美好的午后过去后，那种喜悦的心情也不见了。在傍晚坐汽车回家，开始担心自己的未来学业，懊悔这几个月因为担心签证而没有好好利用的时光。人啊，真的太难获得一些真正身心愉悦的时刻了。</font>]]></content>
+      
+      
       <categories>
-        <category>个人随笔</category>
+          
+          <category> 个人随笔 </category>
+          
       </categories>
-      <tags>
-        <tag>rock</tag>
-        <tag>cranberry</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>leetcode(1) Greedy</title>
-    <url>/2020/06/15/leetcode(1)-Greedy/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h2><font face="微软雅黑">
-This series if articles are written for sovling problems in leetcode.
-</font>
-
-
-<h2 id="455-Assign-Cookies-easy"><a href="#455-Assign-Cookies-easy" class="headerlink" title="455 Assign Cookies (easy)"></a>455 Assign Cookies (easy)</h2><font face="微软雅黑">
-Problem description:
-<br/>**Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.**
-<br/>Note:
-You may assume the greed factor is always positive.
-You cannot assign more than one cookie to one child.    <br/>Thinking:
-<br/>This problem is easy. We just fulfill the child who has lower greedy factor with the least size cookie which could fulfill this child. Therefore, we need to sort the two arrays first and then it is easy.
-<br/>Solution: 
-</font> 
-
-<pre>
-class Solution {
-    public int findContentChildren(int[] g, int[] s) {
-        Arrays.sort(g);
-        Arrays.sort(s);
-        int child = 0;
-        int cookie = 0;
-        while(child< g.length && cookie< s.length){
-            if(g[child]<=s[cookie]) child++;
-            cookie++;
-        }
-        return child;
-    }
-}
-</pre>]]></content>
+      
+      
+        <tags>
+            
+            <tag> rock </tag>
+            
+            <tag> cranberry </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>leetcode(1) Greedy</title>
+      <link href="/2020/06/15/leetcode(1)-Greedy/"/>
+      <url>/2020/06/15/leetcode(1)-Greedy/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h2><font face="微软雅黑">This series if articles are written for sovling problems in leetcode.</font><h2 id="455-Assign-Cookies-easy"><a href="#455-Assign-Cookies-easy" class="headerlink" title="455 Assign Cookies (easy)"></a>455 Assign Cookies (easy)</h2><font face="微软雅黑">Problem description:<br/>**Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.**<br/>Note:You may assume the greed factor is always positive.You cannot assign more than one cookie to one child.    <br/>Thinking:<br/>This problem is easy. We just fulfill the child who has lower greedy factor with the least size cookie which could fulfill this child. Therefore, we need to sort the two arrays first and then it is easy.<br/>Solution: </font> <pre>class Solution {    public int findContentChildren(int[] g, int[] s) {        Arrays.sort(g);        Arrays.sort(s);        int child = 0;        int cookie = 0;        while(child< g.length && cookie< s.length){            if(g[child]<=s[cookie]) child++;            cookie++;        }        return child;    }}</pre><h2 id="135-Candy-hard"><a href="#135-Candy-hard" class="headerlink" title="135 Candy (hard)"></a>135 Candy (hard)</h2><font face="微软雅黑">Problem description:<br/>**There are N children standing in a line. Each child is assigned a rating value.You are giving candies to these children subjected to the following requirements:  1.Each child must have at least one candy.  2.Children with a higher rating get more candies than their neighbors.What is the minimum candies you must give?**<br/>Thinking:<br/>This problem is not as diffcult as we imagine. We don't need to sort the array. We can get solution with two traverses. First, set a array for storing candy allocated to children and all set at 1. Then, from left to right, if the child on the right rating higher than the left child, then the candy of the right children should be updated to be the candy of left child plus one. Finally, from right to left, if the child on the left rating higher than the right child and his candy is not more that the left one, then the candy of the left children should be updated to be the candy of right child plus one.<br/>Solution: </font> <pre>class Solution {    public int candy(int[] ratings) {        int n = ratings.length;        int [] candy = new int [n];        for(int i=0;i< n;i++) candy[i] = 1;        for(int i=1;i< n;i++){            if(ratings[i-1]< ratings[i]) candy[i]=candy[i-1]+1;        }        for(int i=0;i< n-1;i++){            if(ratings[n-i-1]< ratings[n-i-2]) {                    if(candy[n-i-1]>=candy[n-i-2]) candy[n-i-2] = candy[n-i-1]+1;                }              }                         int sum = 0;        for(int i=0;i< n;i++) sum = sum + candy[i];        return sum;    }}</pre>]]></content>
+      
+      
       <categories>
-        <category>algorithm</category>
+          
+          <category> algorithm </category>
+          
       </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>leetcode</tag>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C++ Primer读书笔记(一) 变量与基本类型</title>
-    <url>/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><font face="微软雅黑">
-因为要做C++课程TA的原因，我被迫重新复习一遍好久没用过的C++。自从用了python，不再需要处理指针和内存，也不用考虑抽象的虚函数和多继承，虽然编程效率提高不少，但是总感觉失去了什么东西。因此，今天重新翻开《C++ primer》, 再次拥抱C++。
-</font>
-
-<h2 id="2-1基本内置类型"><a href="#2-1基本内置类型" class="headerlink" title="2.1基本内置类型"></a>2.1基本内置类型</h2><font face="微软雅黑">
-C++是严格类型的编程语言，使用一个变量前必须强调其类型。
-</font>
-
-<h3 id="2-1-1主要算数类型"><a href="#2-1-1主要算数类型" class="headerlink" title="2.1.1主要算数类型"></a>2.1.1主要算数类型</h3><font face="微软雅黑">
-bool 布尔型 1位  
-char 字符型 8位（1字节）  
-int  整型 32位（常用）  
-float 浮点型 6位有效数字  
-double 双精度浮点型 10位有效数字（常用）  
-
-<p>除了bool变量和其他拓展变量类型，其他整型可以划分为带符号和无符号两种。<br></font></p>
-<h3 id="2-1-2强制类型转换"><a href="#2-1-2强制类型转换" class="headerlink" title="2.1.2强制类型转换"></a>2.1.2强制类型转换</h3><font face="微软雅黑">
-赋予一个变量不属于他类型的值，会把这个值强行转化为当前类型  
-例如： int x = 2.1; //实际上x的值变成了2
-</font>
-
-<h3 id="2-1-3特殊保留字符"><a href="#2-1-3特殊保留字符" class="headerlink" title="2.1.3特殊保留字符"></a>2.1.3特殊保留字符</h3><font face="微软雅黑">
-换行符 \n  &emsp;&emsp;制表符 \t &emsp;&emsp;双引号 \"  
-单引号 \'  &emsp;&emsp;反斜线 \\\    &emsp;&emsp;&emsp;回车 \r
-</font>
-
-<h2 id="2-2变量"><a href="#2-2变量" class="headerlink" title="2.2变量"></a>2.2变量</h2><font face="微软雅黑">
-变量的声明，初始化。没什么特别
-</font>
-
-<h3 id="2-2-1定义"><a href="#2-2-1定义" class="headerlink" title="2.2.1定义"></a>2.2.1定义</h3><font face="微软雅黑">
-变量的声明和定义应该区分开，声明(declaration)是使得名字被程序所知，而定义(definition)则是创建与名字相对应的实体。  
-前面加extern并且不初始化，则为声明,没有定义。一个变量仅能被定义一次，但是可以声明无数次。  
-</font>
-
-<h3 id="2-2-2命名规范"><a href="#2-2-2命名规范" class="headerlink" title="2.2.2命名规范"></a>2.2.2命名规范</h3><font face="微软雅黑">  
-标识符用数字，字母以及下划线组成。  
-1.标识符能够体现实际含义，如index  
-2.变量用小写字母，用户自定义类用大写字母开头，如Class  
-3.多个单词组合用_进行分割  
-4.数字不能在第一个位置   
-
-<p>常见保留关键字：<br>try(异常捕捉) union(一种类型) unsigned（非符号）<br>using（使用命名空间） virtual（虚态）static(静态) throw（抛异常）<br>goto（无条件跳转，慎用）inline（内联）namespace（命名空间）<br>operator（操作符）enum（枚举）<br></font></p>
-<h3 id="2-2-3作用域"><a href="#2-2-3作用域" class="headerlink" title="2.2.3作用域"></a>2.2.3作用域</h3><font face="微软雅黑">
-一个变量，函数，类有他的作用域，一般用花括号包含，在作用域之外不被认知。作用域分为全局作用域(global scope)和块作用域(block scope)。内层(inner)作用域会覆盖外层(outer)作用域。
-</font>
-
-<h2 id="2-3复合类型"><a href="#2-3复合类型" class="headerlink" title="2.3复合类型"></a>2.3复合类型</h2><h3 id="2-3-1引用-reference"><a href="#2-3-1引用-reference" class="headerlink" title="2.3.1引用(reference)"></a>2.3.1引用(reference)</h3><font face="微软雅黑">
-用'&'符号来定义引用类型：  
-int ival = 1024;  
-int &refval = ival;  
-</font>
-<font face="微软雅黑" color=red>
-引用必须被初始化！初始化的对象要相匹配，而且不能是常数。
-</font>
-<font face="微软雅黑">
-初始化之后，refval就是ival的化身，两者绑定在一起。
-</font>
-
-<h3 id="2-3-2指针-pointer"><a href="#2-3-2指针-pointer" class="headerlink" title="2.3.2指针(pointer)"></a>2.3.2指针(pointer)</h3><font face="微软雅黑">
-万恶之源。指针让程序员获得操作内存的能力，也让C++程序陷入bug的泥潭。用'*'*定义一个指针变量，同时也用*'*'去访问指针指向的对象。
-int *ip;  
-ip是指向int类变量的指针。定义指针时可以先不初始化。  
-int ip = &ival;
-用'&'取址，容易与引用混淆。  
-指针值应该属于4种状态之一：  
-1.指向一个对象  
-2.指向紧邻对象所占空间的下一个位置  
-3.空指针(nullptr,NULL)
-4.无效指针
-</font>
-
-<h2 id="2-4const限定符"><a href="#2-4const限定符" class="headerlink" title="2.4const限定符"></a>2.4const限定符</h2><font face="微软雅黑">
-用"const"限定一个变量，表明初始化后不可改变。
-<br/>const int val = 0;
-<br/>val如果再次被赋值则会产生error
-<br/>对const变量的引用, const int &r1=val;
-</font>
-
-<h3 id="2-4-1-指向常量的指针和指针常量"><a href="#2-4-1-指向常量的指针和指针常量" class="headerlink" title="2.4.1 指向常量的指针和指针常量"></a>2.4.1 指向常量的指针和指针常量</h3><font face="微软雅黑">
-指向常量的指针：const double* p = &pi;
-<br/>pi不可以通过p被修改。
-<br/>指针常量: int * const pip = &pi;
-<br/>pip永远指向pi，该指针指向地址永远不能被修改。
-</font>
-
-<h2 id="2-5处理类型"><a href="#2-5处理类型" class="headerlink" title="2.5处理类型"></a>2.5处理类型</h2><font face="微软雅黑">
-类型别名关键字：typeof：
-<br/>typeof double wages; //wages变成了double别名
-<br/>类型说明符：auto：
-<br/>auto让编译器去分析表达式所属类型，必须进行初始化：
-<br/>auto item = val1 + val2;
-<br/>类型指示符：decltype：
-<br/>decltype(f())返回函数的返回类型：
-<br/>decltype(f()) sum = x;
-</font>]]></content>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> leetcode </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++ Primer读书笔记(一) 变量与基本类型</title>
+      <link href="/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/"/>
+      <url>/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><font face="微软雅黑">因为要做C++课程TA的原因，我被迫重新复习一遍好久没用过的C++。自从用了python，不再需要处理指针和内存，也不用考虑抽象的虚函数和多继承，虽然编程效率提高不少，但是总感觉失去了什么东西。因此，今天重新翻开《C++ primer》, 再次拥抱C++。</font><h2 id="2-1基本内置类型"><a href="#2-1基本内置类型" class="headerlink" title="2.1基本内置类型"></a>2.1基本内置类型</h2><font face="微软雅黑">C++是严格类型的编程语言，使用一个变量前必须强调其类型。</font><h3 id="2-1-1主要算数类型"><a href="#2-1-1主要算数类型" class="headerlink" title="2.1.1主要算数类型"></a>2.1.1主要算数类型</h3><font face="微软雅黑">bool 布尔型 1位  char 字符型 8位（1字节）  int  整型 32位（常用）  float 浮点型 6位有效数字  double 双精度浮点型 10位有效数字（常用）  <p>除了bool变量和其他拓展变量类型，其他整型可以划分为带符号和无符号两种。<br></font></p><h3 id="2-1-2强制类型转换"><a href="#2-1-2强制类型转换" class="headerlink" title="2.1.2强制类型转换"></a>2.1.2强制类型转换</h3><font face="微软雅黑">赋予一个变量不属于他类型的值，会把这个值强行转化为当前类型  例如： int x = 2.1; //实际上x的值变成了2</font><h3 id="2-1-3特殊保留字符"><a href="#2-1-3特殊保留字符" class="headerlink" title="2.1.3特殊保留字符"></a>2.1.3特殊保留字符</h3><font face="微软雅黑">换行符 \n  &emsp;&emsp;制表符 \t &emsp;&emsp;双引号 \"  单引号 \'  &emsp;&emsp;反斜线 \\\    &emsp;&emsp;&emsp;回车 \r</font><h2 id="2-2变量"><a href="#2-2变量" class="headerlink" title="2.2变量"></a>2.2变量</h2><font face="微软雅黑">变量的声明，初始化。没什么特别</font><h3 id="2-2-1定义"><a href="#2-2-1定义" class="headerlink" title="2.2.1定义"></a>2.2.1定义</h3><font face="微软雅黑">变量的声明和定义应该区分开，声明(declaration)是使得名字被程序所知，而定义(definition)则是创建与名字相对应的实体。  前面加extern并且不初始化，则为声明,没有定义。一个变量仅能被定义一次，但是可以声明无数次。  </font><h3 id="2-2-2命名规范"><a href="#2-2-2命名规范" class="headerlink" title="2.2.2命名规范"></a>2.2.2命名规范</h3><font face="微软雅黑">  标识符用数字，字母以及下划线组成。  1.标识符能够体现实际含义，如index  2.变量用小写字母，用户自定义类用大写字母开头，如Class  3.多个单词组合用_进行分割  4.数字不能在第一个位置   <p>常见保留关键字：<br>try(异常捕捉) union(一种类型) unsigned（非符号）<br>using（使用命名空间） virtual（虚态）static(静态) throw（抛异常）<br>goto（无条件跳转，慎用）inline（内联）namespace（命名空间）<br>operator（操作符）enum（枚举）<br></font></p><h3 id="2-2-3作用域"><a href="#2-2-3作用域" class="headerlink" title="2.2.3作用域"></a>2.2.3作用域</h3><font face="微软雅黑">一个变量，函数，类有他的作用域，一般用花括号包含，在作用域之外不被认知。作用域分为全局作用域(global scope)和块作用域(block scope)。内层(inner)作用域会覆盖外层(outer)作用域。</font><h2 id="2-3复合类型"><a href="#2-3复合类型" class="headerlink" title="2.3复合类型"></a>2.3复合类型</h2><h3 id="2-3-1引用-reference"><a href="#2-3-1引用-reference" class="headerlink" title="2.3.1引用(reference)"></a>2.3.1引用(reference)</h3><font face="微软雅黑">用'&'符号来定义引用类型：  int ival = 1024;  int &refval = ival;  </font><font face="微软雅黑" color=red>引用必须被初始化！初始化的对象要相匹配，而且不能是常数。</font><font face="微软雅黑">初始化之后，refval就是ival的化身，两者绑定在一起。</font><h3 id="2-3-2指针-pointer"><a href="#2-3-2指针-pointer" class="headerlink" title="2.3.2指针(pointer)"></a>2.3.2指针(pointer)</h3><font face="微软雅黑">万恶之源。指针让程序员获得操作内存的能力，也让C++程序陷入bug的泥潭。用'*'*定义一个指针变量，同时也用*'*'去访问指针指向的对象。int *ip;  ip是指向int类变量的指针。定义指针时可以先不初始化。  int ip = &ival;用'&'取址，容易与引用混淆。  指针值应该属于4种状态之一：  1.指向一个对象  2.指向紧邻对象所占空间的下一个位置  3.空指针(nullptr,NULL)4.无效指针</font><h2 id="2-4const限定符"><a href="#2-4const限定符" class="headerlink" title="2.4const限定符"></a>2.4const限定符</h2><font face="微软雅黑">用"const"限定一个变量，表明初始化后不可改变。<br/>const int val = 0;<br/>val如果再次被赋值则会产生error<br/>对const变量的引用, const int &r1=val;</font><h3 id="2-4-1-指向常量的指针和指针常量"><a href="#2-4-1-指向常量的指针和指针常量" class="headerlink" title="2.4.1 指向常量的指针和指针常量"></a>2.4.1 指向常量的指针和指针常量</h3><font face="微软雅黑">指向常量的指针：const double* p = &pi;<br/>pi不可以通过p被修改。<br/>指针常量: int * const pip = &pi;<br/>pip永远指向pi，该指针指向地址永远不能被修改。</font><h2 id="2-5处理类型"><a href="#2-5处理类型" class="headerlink" title="2.5处理类型"></a>2.5处理类型</h2><font face="微软雅黑">类型别名关键字：typeof：<br/>typeof double wages; //wages变成了double别名<br/>类型说明符：auto：<br/>auto让编译器去分析表达式所属类型，必须进行初始化：<br/>auto item = val1 + val2;<br/>类型指示符：decltype：<br/>decltype(f())返回函数的返回类型：<br/>decltype(f()) sum = x;</font>]]></content>
+      
+      
       <categories>
-        <category>reading note</category>
+          
+          <category> reading note </category>
+          
       </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>programming</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> programming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
