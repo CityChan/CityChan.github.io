@@ -1,9 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C++ Primer读书笔记(二) 字符串、向量和数组</title>
+    <url>/2020/06/16/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E5%90%91%E9%87%8F%E5%92%8C%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="3-1命名空间的using声明"><a href="#3-1命名空间的using声明" class="headerlink" title="3.1命名空间的using声明"></a>3.1命名空间的using声明</h2><font face="微软雅黑">
+目前我们使用的函数基本属于命名空间std，如果每次调用都用std::则比较繁琐，因此我们可以在程序开头声明:
+<br/>using namespacce std;
+<br/><font face="微软雅黑" color=red>头文件不应该包含using！否则会造成一些始料未及的错误。</font>
+</font>
+
+<h2 id="3-2标准库类型string"><a href="#3-2标准库类型string" class="headerlink" title="3.2标准库类型string"></a>3.2标准库类型string</h2><h3 id="3-2-1初始化"><a href="#3-2-1初始化" class="headerlink" title="3.2.1初始化"></a>3.2.1初始化</h3><font face="微软雅黑">
+1.拷贝初始化： string s1 = "hello";
+<br/>2.直接初始化： string s2("hello");
+</font>
+
+<h3 id="3-2-2操作"><a href="#3-2-2操作" class="headerlink" title="3.2.2操作"></a>3.2.2操作</h3><font face="微软雅黑">
+1.从字符串is中读取一行赋值给s： getline(is,s);
+<br/>2.判断s是否为空：s.emtpy();
+<br/>3.获得s的大小: s.size();
+<br/>4.连接s1和s2: s1+s2;
+</font>
+
+<h2 id="3-3标准库类型vector"><a href="#3-3标准库类型vector" class="headerlink" title="3.3标准库类型vector"></a>3.3标准库类型vector</h2><h3 id="3-3-1初始化"><a href="#3-3-1初始化" class="headerlink" title="3.3.1初始化"></a>3.3.1初始化</h3><font face="微软雅黑">
+vector是模板并非类，必须进行实例化。 
+<br/>vector < int> vi;
+</font>
+
+<h3 id="3-3-2vector操作"><a href="#3-3-2vector操作" class="headerlink" title="3.3.2vector操作"></a>3.3.2vector操作</h3><font face="微软雅黑">
+push_back(val);
+<br/>表示向容器push入一个对象val至尾端。  
+v.empty();  
+v.size();  
+类似string.
+</font>
+
+<h2 id="3-4迭代器"><a href="#3-4迭代器" class="headerlink" title="3.4迭代器"></a>3.4迭代器</h2><font face="微软雅黑">
+iterator是用于迭代的一个容器，有begin和end成员，用auto类型表示，用于表示首位置和最后位置。通常操作符：  
+= = 和 ! = 进行逻辑判断  
+*iter返回iter所指元素的引用  
+iter->mem，相当于(\*iter).mem
+</font>
+
+<h2 id="3-5数组"><a href="#3-5数组" class="headerlink" title="3.5数组"></a>3.5数组</h2><font face="微软雅黑">
+熟悉的数组,初始化的维度必须是常量。数组不允许拷贝和赋值，即不允许使用一个数组初始化另一个数组。  
+数组的第一个元素,nums[0]的地址即nums的值，即string *p2 = nums[0]相当于p2 = nums。
+</font>]]></content>
+      <categories>
+        <category>reading note</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>programming</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>每日一曲 Dreams</title>
+    <url>/2020/06/16/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B2-Dreams/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
+    <div id="aplayer-CCmJIqMk" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="003Df68P3wAWvs" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
+
+<font face="微软雅黑">
+去年的秋天，我听着这首小红莓的Dreams,漫步在广州上下九的街道上。那天，担忧已久的签证面试直接issued了，签证官对我说：“Have a nice trip.”这是一种从没有过的感觉，我终于有机会看看太平洋彼岸的世界。那里不是天堂，也不是地狱，是一个陌生的地方，我将在那里独自生活，一切从零开始。过去几年的迷茫，失望，惋惜仿佛都不复存在，因为从零开始已经没有什么可以失去了。广州的天气正好，我吃着老字号的双皮奶，艇仔粥，向朋友分享着好消息。
+Dolores的声音实在太好听，有一种空灵而迷幻的感觉。王菲早年正是模仿她的唱腔走红，但两者又不是同一种感觉。最早知道Cranberries是因为Zombies anti-war的歌，里面Dolores的声音非常坚定，强大，以至于我一开始没有意识到这两首歌是同一个人唱的。
+<br/>美好的午后过去后，那种喜悦的心情也不见了。在傍晚坐汽车回家，开始担心自己的未来学业，懊悔这几个月因为担心签证而没有好好利用的时光。人啊，真的太难获得一些真正身心愉悦的时刻了。
+</font>]]></content>
+      <categories>
+        <category>个人随笔</category>
+      </categories>
+      <tags>
+        <tag>rock</tag>
+        <tag>cranberry</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>leetcode(1) Greedy</title>
+    <url>/2020/06/15/leetcode(1)-Greedy/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h2><font face="微软雅黑">
+This series if articles are written for sovling problems in leetcode.
+</font>
+
+
+<h2 id="455-Assign-Cookies-easy"><a href="#455-Assign-Cookies-easy" class="headerlink" title="455 Assign Cookies (easy)"></a>455 Assign Cookies (easy)</h2><font face="微软雅黑">
+Problem description:
+<br/>**Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.**
+<br/>Note:
+You may assume the greed factor is always positive.
+You cannot assign more than one cookie to one child.    <br/>Thinking:
+<br/>This problem is easy. We just fulfill the child who has lower greedy factor with the least size cookie which could fulfill this child. Therefore, we need to sort the two arrays first and then it is easy.
+<br/>Solution: 
+</font> 
+
+<pre>
+class Solution {
+    public int findContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
+        int child = 0;
+        int cookie = 0;
+        while(child< g.length && cookie< s.length){
+            if(g[child]<=s[cookie]) child++;
+            cookie++;
+        }
+        return child;
+    }
+}
+</pre>]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>leetcode</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C++ Primer读书笔记(一) 变量与基本类型</title>
     <url>/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><font face="微软雅黑">
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><font face="微软雅黑">
 因为要做C++课程TA的原因，我被迫重新复习一遍好久没用过的C++。自从用了python，不再需要处理指针和内存，也不用考虑抽象的虚函数和多继承，虽然编程效率提高不少，但是总感觉失去了什么东西。因此，今天重新翻开《C++ primer》, 再次拥抱C++。
 </font>
 
@@ -105,69 +221,6 @@ int ip = &ival;
       <tags>
         <tag>C++</tag>
         <tag>programming</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>leetcode(1) Greedy</title>
-    <url>/2020/06/15/leetcode(1)-Greedy/</url>
-    <content><![CDATA[<h2 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h2><font face="微软雅黑">
-This series if articles are written for sovling problems in leetcode.
-</font>
-
-
-<h2 id="455-Assign-Cookies-easy"><a href="#455-Assign-Cookies-easy" class="headerlink" title="455 Assign Cookies (easy)"></a>455 Assign Cookies (easy)</h2><font face="微软雅黑">
-Problem description:
-<br/>**Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.**
-<br/>Note:
-You may assume the greed factor is always positive.
-You cannot assign more than one cookie to one child.    <br/>Thinking:
-<br/>This problem is easy. We just fulfill the child who has lower greedy factor with the least size cookie which could fulfill this child. Therefore, we need to sort the two arrays first and then it is easy.
-<br/>Solution: 
-</font> 
-
-<pre>
-class Solution {
-    public int findContentChildren(int[] g, int[] s) {
-        Arrays.sort(g);
-        Arrays.sort(s);
-        int child = 0;
-        int cookie = 0;
-        while(child< g.length && cookie< s.length){
-            if(g[child]<=s[cookie]) child++;
-            cookie++;
-        }
-        return child;
-    }
-}
-</pre>]]></content>
-      <categories>
-        <category>algorithm</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>leetcode</tag>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>每日一曲 Dream</title>
-    <url>/2020/06/16/%E6%AF%8F%E6%97%A5%E4%B8%80%E6%9B%B2-Dream/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>
-    <div id="aplayer-ZZZsPrfp" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="003Df68P3wAWvs" data-server="tencent" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
-    ></div>
-
-<font face="微软雅黑">
-去年的秋天，我听着这首小红莓的Dream,漫步在广州上下九的街道上。那天，担忧已久的签证面试直接issued了，签证官对我说：“Have a nice trip.”这是一种从没有过的感觉，我终于有机会看看太平洋彼岸的世界。那里不是天堂，也不是地狱，是一个陌生的地方，我将在那里独自生活，一切从零开始。过去几年的迷茫，失望，惋惜仿佛都不复存在，因为从零开始已经没有什么可以失去了。广州的天气正好，我吃着老字号的双皮奶，艇仔粥，向朋友分享着好消息。
-Dolores的声音实在太好听，有一种空灵而迷幻的感觉。王菲早年正是模仿她的唱腔走红，但两者又不是同一种感觉。最早知道Cranberries是因为Zombies anti-war的歌，里面Dolores的声音非常坚定，强大，以至于我一开始没有意识到这两首歌是同一个人唱的。
-<br/>美好的午后过去后，那种喜悦的心情也不见了。在傍晚坐汽车回家，开始担心自己的未来学业，懊悔这几个月因为担心签证而没有好好利用的时光。人啊，真的太难获得一些真正身心愉悦的时刻了。
-</font>]]></content>
-      <categories>
-        <category>个人随笔</category>
-      </categories>
-      <tags>
-        <tag>rock</tag>
-        <tag>cranberry</tag>
       </tags>
   </entry>
 </search>
