@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="leetcode,java,C++," />
+  <meta name="keywords" content="C++,leetcode,java," />
 
 
 
@@ -87,11 +87,11 @@
 <meta property="og:description" content="Foreword This series if articles are written for sovling problems in leetcode.    455 Assign Cookies (easy) Problem description: **Assume you are an awesome parent and want to give your children some">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-16T02:45:42.000Z">
-<meta property="article:modified_time" content="2020-06-17T17:12:08.454Z">
+<meta property="article:modified_time" content="2020-06-17T20:11:55.541Z">
 <meta property="article:author" content="Joseph Chan">
+<meta property="article:tag" content="C++">
 <meta property="article:tag" content="leetcode">
 <meta property="article:tag" content="java">
-<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
 
 
@@ -646,6 +646,106 @@ class Solution {
     }
 }
 </pre>
+
+<h2 id="122-Best-Time-to-Buy-and-Sell-Stock-II（easy）"><a href="#122-Best-Time-to-Buy-and-Sell-Stock-II（easy）" class="headerlink" title="122 Best Time to Buy and Sell Stock II（easy）"></a>122 Best Time to Buy and Sell Stock II（easy）</h2><font face="微软雅黑">
+Problem description:
+<br/>**Say you have an array prices for which the ith element is the price of a given stock on day i.Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).**
+<br/>Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+<br/>Thinking:
+<br/>This problem is easy.
+<br/>Solution: 
+</font>
+
+<pre>
+class Solution {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        if(n==1) return 0;
+        int profit = 0;
+        int today;
+        int tomorrow;
+        for(int i=0;i< n-1;i++){
+            today = prices[i];
+            tomorrow = prices[i+1];
+            if(tomorrow>today) profit = profit + tomorrow - today;
+        }
+        return profit;
+    }
+}
+</pre> 
+
+<h2 id="406-Queue-Reconstruction-by-Height-medium"><a href="#406-Queue-Reconstruction-by-Height-medium" class="headerlink" title="406 Queue Reconstruction by Height(medium)"></a>406 Queue Reconstruction by Height(medium)</h2><font face="微软雅黑">
+Problem description:
+<br/>**Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers (h, k), where h is the height of the person and k is the number of people in front of this person who have a height greater than or equal to h. Write an algorithm to reconstruct the queue.**
+<br/>Note: The number of people is less than 1,100.
+<br/>Thinking:
+<br/>This problem need sort and insert. First, sort the 2-dimensional array according to the first value(height) from high to short. If their height are the same, comparing the second values, from small fo big. After that, we build a new array, and insert the array according to the second element. 
+<br/>Solution: 
+</font>
+
+<pre>
+class Solution {
+    public int[][] reconstructQueue(int[][] people) {
+        Arrays.sort(people,new Comparator< int[]>(){
+           public int compare(int[] a,int[] b){
+                if(a[0] == b[0]) return a[1]-b[1];
+                else{
+                    return b[0]-a[0];
+                }
+           }
+        });
+        int n = people.length;
+        int [][] a = new int [n][2];
+        List<int[]> list = new ArrayList<int []> ();
+        for(int i=0;i< n;i++) list.add(people[i]);
+        for(int i=0;i< n;i++){
+            int[] b = list.remove(i);
+            int p = b[1];
+            list.add(p,b);
+        }
+        list.toArray(a);
+        return a;
+    }
+}
+</pre>
+
+<h2 id="665-Non-decreasing-Array（easy）"><a href="#665-Non-decreasing-Array（easy）" class="headerlink" title="665 Non-decreasing Array（easy）"></a>665 Non-decreasing Array（easy）</h2><font face="微软雅黑">
+Problem description:
+<br/>**Given an array nums with n integers, your task is to check if it could become non-decreasing by modifying at most 1 element.We define an array is non-decreasing if nums[i] <= nums[i + 1] holds for every i (0-based) such that (0 <= i <= n - 2).**
+<br/>Thinking:
+<br/>This problem is easy.
+<br/>Solution: 
+</font> 
+
+<pre>
+class Solution {
+    public boolean checkPossibility(int[] nums) {
+        int n = nums.length;
+        boolean b = true;
+        int count = 0;
+        for(int i=1;i< n;i++){
+            if(nums[i-1]>nums[i]) count++;
+            if(count >= 1){
+                if(count >1) {
+                    b = false;
+                    break;
+                }
+                else{
+                    if(nums[i-1]>nums[i]){
+                        if(i>1&&i< n-1){
+                            if((nums[i-2]> nums[i])&&(nums[i-1]> nums[i+1])) {
+                                b = false;
+                                break;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        return b;
+    }
+}
+</pre>
       
     </div>
     
@@ -662,11 +762,11 @@ class Solution {
       
         <div class="post-tags">
           
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
             <a href="/tags/leetcode/" rel="tag"># leetcode</a>
           
             <a href="/tags/java/" rel="tag"># java</a>
-          
-            <a href="/tags/C/" rel="tag"># C++</a>
           
         </div>
       
@@ -782,7 +882,7 @@ class Solution {
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -793,7 +893,7 @@ class Solution {
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -804,7 +904,7 @@ class Solution {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -837,7 +937,7 @@ class Solution {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Foreword"><span class="nav-number">1.</span> <span class="nav-text">Foreword</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#455-Assign-Cookies-easy"><span class="nav-number">2.</span> <span class="nav-text">455 Assign Cookies (easy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#135-Candy-hard"><span class="nav-number">3.</span> <span class="nav-text">135 Candy (hard)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#435-Non-overlapping-Intervals-medium"><span class="nav-number">4.</span> <span class="nav-text">435 Non-overlapping Intervals (medium)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#605-Can-Place-Flowers-easy"><span class="nav-number">5.</span> <span class="nav-text">605 Can Place Flowers(easy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#452-Minimum-Number-of-Arrows-to-Burst-Balloons-medium"><span class="nav-number">6.</span> <span class="nav-text">452 Minimum Number of Arrows to Burst Balloons(medium)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#763-Partition-Labels-medium"><span class="nav-number">7.</span> <span class="nav-text">763 Partition Labels(medium)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Foreword"><span class="nav-number">1.</span> <span class="nav-text">Foreword</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#455-Assign-Cookies-easy"><span class="nav-number">2.</span> <span class="nav-text">455 Assign Cookies (easy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#135-Candy-hard"><span class="nav-number">3.</span> <span class="nav-text">135 Candy (hard)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#435-Non-overlapping-Intervals-medium"><span class="nav-number">4.</span> <span class="nav-text">435 Non-overlapping Intervals (medium)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#605-Can-Place-Flowers-easy"><span class="nav-number">5.</span> <span class="nav-text">605 Can Place Flowers(easy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#452-Minimum-Number-of-Arrows-to-Burst-Balloons-medium"><span class="nav-number">6.</span> <span class="nav-text">452 Minimum Number of Arrows to Burst Balloons(medium)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#763-Partition-Labels-medium"><span class="nav-number">7.</span> <span class="nav-text">763 Partition Labels(medium)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#122-Best-Time-to-Buy-and-Sell-Stock-II（easy）"><span class="nav-number">8.</span> <span class="nav-text">122 Best Time to Buy and Sell Stock II（easy）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#406-Queue-Reconstruction-by-Height-medium"><span class="nav-number">9.</span> <span class="nav-text">406 Queue Reconstruction by Height(medium)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#665-Non-decreasing-Array（easy）"><span class="nav-number">10.</span> <span class="nav-text">665 Non-decreasing Array（easy）</span></a></li></ol></div>
             
 
           </div>
