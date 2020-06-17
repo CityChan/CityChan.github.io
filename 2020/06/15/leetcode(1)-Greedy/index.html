@@ -87,7 +87,7 @@
 <meta property="og:description" content="Foreword This series if articles are written for sovling problems in leetcode.    455 Assign Cookies (easy) Problem description: **Assume you are an awesome parent and want to give your children some">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-16T02:45:42.000Z">
-<meta property="article:modified_time" content="2020-06-17T03:07:44.144Z">
+<meta property="article:modified_time" content="2020-06-17T04:34:05.616Z">
 <meta property="article:author" content="Joseph Chan">
 <meta property="article:tag" content="C++">
 <meta property="article:tag" content="leetcode">
@@ -451,6 +451,47 @@ class Solution {
     }
 }
 </pre>
+
+<h2 id="435-Non-overlapping-Intervals-medium"><a href="#435-Non-overlapping-Intervals-medium" class="headerlink" title="435 Non-overlapping Intervals (medium)"></a>435 Non-overlapping Intervals (medium)</h2><font face="微软雅黑">
+Problem description:
+<br/>**Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.**
+<br/>Thinking:
+<br/>Using greed pricinple, sort the arrays first according to last element(interval's tail) in ascending sequence. Then picking the interval which has smaller tail as possible as we can, skipping the overlapping intervals for the chosen intervals.
+<br/>Solution: 
+</font> 
+
+<pre>
+class Solution {
+    public int eraseOverlapIntervals(int[][] intervals) {
+        int n = intervals.length;
+        if(n==0) return 0;
+        int [] tail = new int [n];
+        int [] head = new int [n];
+        int [] flag = new int [n];
+        Arrays.sort(intervals,new Comparator< int[]>(){
+           public int compare(int[] a,int[] b){
+                  return a[1]-b[1];
+           }
+        });
+        for(int i=0;i< n;i++) {
+            tail[i] = intervals[i][1];
+            head[i] = intervals[i][0];
+            flag[i] = 0;
+        }
+        flag[0] = 1;
+        int t = tail[0];
+        for(int i=1;i< n;i++){
+            if(head[i]>=t) {
+                flag[i] = 1;
+                t = tail[i];
+            }
+        }
+        int sum=0;
+        for(int i=0;i< n;i++) sum+=flag[i];
+        return n-sum;
+    }
+}
+</pre>
       
     </div>
     
@@ -642,7 +683,7 @@ class Solution {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Foreword"><span class="nav-number">1.</span> <span class="nav-text">Foreword</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#455-Assign-Cookies-easy"><span class="nav-number">2.</span> <span class="nav-text">455 Assign Cookies (easy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#135-Candy-hard"><span class="nav-number">3.</span> <span class="nav-text">135 Candy (hard)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Foreword"><span class="nav-number">1.</span> <span class="nav-text">Foreword</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#455-Assign-Cookies-easy"><span class="nav-number">2.</span> <span class="nav-text">455 Assign Cookies (easy)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#135-Candy-hard"><span class="nav-number">3.</span> <span class="nav-text">135 Candy (hard)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#435-Non-overlapping-Intervals-medium"><span class="nav-number">4.</span> <span class="nav-text">435 Non-overlapping Intervals (medium)</span></a></li></ol></div>
             
 
           </div>
