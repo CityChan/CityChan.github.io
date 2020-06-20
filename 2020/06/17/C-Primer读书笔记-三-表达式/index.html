@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C++,programming," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta name="description" content="We shall meet in the place where there is no darkness.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Stairway to Heaven">
-<meta property="og:url" content="http://citychan.github.io/categories/reading-note/index.html">
+<meta name="description" content="4.1 算数运算符 最高优先级：+ -（一元正负号）   第二优先级：* &#x2F; %    最低优先级：+ -    4.2 逻辑和关系运算符   逻辑运算符的优先级都低于算数运算符。   最高优先级：!（逻辑非）   第二优先级：&lt;  &gt;&#x3D;    第三优先级：&#x3D;&#x3D; !&#x3D;    第四优先级: &amp;&amp;（逻辑与）   最低优先级: || (逻辑或)     短路求值：两个逻辑表达式用&amp;&amp;连接，如果第一个表达">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++ Primer读书笔记(三) 表达式">
+<meta property="og:url" content="http://citychan.github.io/2020/06/17/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%89-%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Stairway to Heaven">
-<meta property="og:description" content="We shall meet in the place where there is no darkness.">
+<meta property="og:description" content="4.1 算数运算符 最高优先级：+ -（一元正负号）   第二优先级：* &#x2F; %    最低优先级：+ -    4.2 逻辑和关系运算符   逻辑运算符的优先级都低于算数运算符。   最高优先级：!（逻辑非）   第二优先级：&lt;  &gt;&#x3D;    第三优先级：&#x3D;&#x3D; !&#x3D;    第四优先级: &amp;&amp;（逻辑与）   最低优先级: || (逻辑或)     短路求值：两个逻辑表达式用&amp;&amp;连接，如果第一个表达">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-18T01:11:05.000Z">
+<meta property="article:modified_time" content="2020-06-18T02:04:25.897Z">
 <meta property="article:author" content="Joseph Chan">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="programming">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://CityChan.github.io/categories/reading-note/"/>
+  <link rel="canonical" href="http://CityChan.github.io/2020/06/17/C-Primer读书笔记-三-表达式/"/>
 
 
 
 
 
-  <title>Category: reading note | Stairway to Heaven</title>
+  <title>C++ Primer读书笔记(三) 表达式 | Stairway to Heaven</title>
   
 
 
@@ -142,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,111 +274,225 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block category">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>reading note<small>Category</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://CityChan.github.io/2020/06/17/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%89-%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Joseph Chan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/xulun.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Stairway to Heaven">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2020/06/17/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%89-%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url">
-              
-                <span itemprop="name">C++ Primer读书笔记(三) 表达式</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">C++ Primer读书笔记(三) 表达式</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-06-17T20:11:05-05:00"
-              content="2020-06-17" >
-          06-17
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-17T20:11:05-05:00">
+                2020-06-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading-note/" itemprop="url" rel="index">
+                    <span itemprop="name">reading note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/17/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%89-%E8%A1%A8%E8%BE%BE%E5%BC%8F/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/17/C-Primer读书笔记-三-表达式/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/06/16/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%BA%8C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E5%90%91%E9%87%8F%E5%92%8C%E6%95%B0%E7%BB%84/" itemprop="url">
-              
-                <span itemprop="name">C++ Primer读书笔记(二) 字符串、向量和数组</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-06-16T13:49:09-05:00"
-              content="2020-06-16" >
-          06-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
+        <h2 id="4-1-算数运算符"><a href="#4-1-算数运算符" class="headerlink" title="4.1 算数运算符"></a>4.1 算数运算符</h2><font face="微软雅黑">
+最高优先级：+ -（一元正负号）  
+第二优先级：* / %   
+最低优先级：+ - 
+</font>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<h2 id="4-2-逻辑和关系运算符"><a href="#4-2-逻辑和关系运算符" class="headerlink" title="4.2 逻辑和关系运算符"></a>4.2 逻辑和关系运算符</h2><font face="微软雅黑">  
+逻辑运算符的优先级都低于算数运算符。  
+最高优先级：!（逻辑非）  
+第二优先级：< <= > >=   
+第三优先级：== !=   
+第四优先级: &&（逻辑与）  
+最低优先级: || (逻辑或)
+</font>
+<font face="微软雅黑" color = red>  
+短路求值：两个逻辑表达式用&&连接，如果第一个表达式的值为false,第二个表达式不会被计算或运行。同理，如果是||连接，第一个表达式的值为true,第二个表达式也不会被计算。
+</font>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2020/06/15/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%80-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" itemprop="url">
-              
-                <span itemprop="name">C++ Primer读书笔记(一) 变量与基本类型</span>
-              
-            </a>
-        
-      </h2>
+<h2 id="4-3-赋值运算符"><a href="#4-3-赋值运算符" class="headerlink" title="4.3 赋值运算符"></a>4.3 赋值运算符</h2><font face="微软雅黑">  
+逻辑运算符的优先级都低于算数运算符。  
+最高优先级：!（逻辑非）  
+第二优先级：< <= > >=   
+第三优先级：== !=   
+第四优先级: &&（逻辑与）  
+最低优先级: || (逻辑或)
+</font>
+<font face="微软雅黑" color = red>  
+短路求值：两个逻辑表达式用&&连接，如果第一个表达式的值为false,第二个表达式不会被计算或运行。同理，如果是||连接，第一个表达式的值为true,第二个表达式也不会被计算。
+</font>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-06-15T15:00:18-05:00"
-              content="2020-06-15" >
-          06-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+<h2 id="4-4成员访问运算符、条件运算符和位运算符"><a href="#4-4成员访问运算符、条件运算符和位运算符" class="headerlink" title="4.4成员访问运算符、条件运算符和位运算符"></a>4.4成员访问运算符、条件运算符和位运算符</h2><font face="微软雅黑">
+1. ptr->mem相当于（*ptr).mem  
+2. 条件运算符，少用： cond?expr1:expr2，若cond为true则取值expr1,否则取expr2。
+3. 位运算符：  
+第一优先级： ~ 按位取反  
+第二优先级： << 左移  >> 右移  
+第三优先级: & 按位与  
+第四优先级: ^ 异或  
+第五优先级: | 按位或  
+其他内容太基础了以至于我不想写出来 
+</font>
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+            <a href="/tags/programming/" rel="tag"># programming</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/17/Dota-and-LOL-are-two-different-games/" rel="next" title="Why Dota2 and LOL are two different games">
+                <i class="fa fa-chevron-left"></i> Why Dota2 and LOL are two different games
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/19/leetcode(2)-Pointer/" rel="prev" title="leetcode(2) Pointer">
+                leetcode(2) Pointer <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -382,6 +500,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -402,8 +534,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -467,6 +608,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-算数运算符"><span class="nav-number">1.</span> <span class="nav-text">4.1 算数运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-逻辑和关系运算符"><span class="nav-number">2.</span> <span class="nav-text">4.2 逻辑和关系运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-赋值运算符"><span class="nav-number">3.</span> <span class="nav-text">4.3 赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4成员访问运算符、条件运算符和位运算符"><span class="nav-number">4.</span> <span class="nav-text">4.4成员访问运算符、条件运算符和位运算符</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -631,6 +788,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -648,6 +809,18 @@
       <script id="dsq-count-scr" src="https://CityChan.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://citychan.github.io/2020/06/17/C-Primer%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%89-%E8%A1%A8%E8%BE%BE%E5%BC%8F/';
+          this.page.identifier = '2020/06/17/C-Primer读书笔记-三-表达式/';
+          this.page.title = 'C++ Primer读书笔记(三) 表达式';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://CityChan.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
