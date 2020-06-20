@@ -6,7 +6,7 @@ const ap = new APlayer({
       {
         name: "stairway to heaven",
         artist: 'Led Zeppelin',
-        url: 'http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_83826476&response=res&type=convert_url&',
+        url: 'https://1.mp3-download.best/stream/BvWBZB:YuX1rB',
         cover: '',
       }
     ]
