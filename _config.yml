@@ -86,7 +86,7 @@ author:
   location         : "Austin, TX"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6IccY6U7wvyXFbO_5fR15fHvhlxMfQZntVUE1OWBwK-vzXIJrcjtmIJ5bjNDREzHcd-PtCZ2BsvWlB8Zi1Xl-Wj-CVeg&user=WGrJ5H8AAAAJ"
+  googlescholar    : "https://scholar.google.com.hk/citations?user=WGrJ5H8AAAAJ&hl=zh-CN&oi=ao"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  # twitter          : "replacethistwitterhandle"
+  twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
