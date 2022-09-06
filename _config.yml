@@ -85,7 +85,7 @@ author:
   bio              : "Ph.D Student, Electrical and Computer Engineering"
   location         : "Austin, TX"
   employer         : "The University of Texas at Austin"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.hk/citations?user=WGrJ5H8AAAAJ&hl=zh-CN&oi=ao"
   email            : "huanchengch@utexas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/CityChan"
+  github           : "CityChan"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/huancheng-chen-1016671a2/"
   # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
