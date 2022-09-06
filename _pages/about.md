@@ -14,4 +14,4 @@ My research focuses on Federated Learning and Reinforcement Learning in particul
 
 Before joining UT Austin, I obtained my B.Eng degree from the department of Electrical Engineering and Automation, [South China University of Technology](https://www.scut.edu.cn/en/).
 
-Outside research， I am a electric guitar player (a fan of Pink Floyd), WOWer (for the alliance) and soccer player (a fan of Chelsea).
+Outside research，I am an electric guitar player (a fan of Pink Floyd), WOWer (for the alliance) and soccer player (a fan of Chelsea).
