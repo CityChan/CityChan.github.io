@@ -13,3 +13,5 @@ I am a third-year Ph.D. student in the Department of [Electrical and Computer En
 My research focuses on Federated Learning and Reinforcement Learning in particular. Specifically, I am interested in 1) federated learning with data-heterogeneous and resource-heterogeneous clients 2) using reinforcement learning to improve client selection among millions of various clients in a realistic system. I am also interested in application of differential privacy in federated learning.
 
 Before joining UT Austin, I obtained my B.Eng degree from the department of Electrical Engineering and Automation, [South China University of Technology](https://www.scut.edu.cn/en/).
+
+Outside research， I am a electric guitar player (a fan of Pink Floyd), WOWer (for the alliance) and soccer player (a fan of Chelsea).
