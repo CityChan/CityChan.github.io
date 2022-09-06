@@ -1,10 +1,8 @@
 ---
 title: "Paper Title Number 2"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
+permalink: /publication/2022-5-31-paper-title-number-2
+venue: 'arxiv'
 paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 
 Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data
