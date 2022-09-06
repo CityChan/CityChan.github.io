@@ -229,7 +229,7 @@ defaults:
       comments: true
   # _portfolio
   - scope:
-      path: ""
+      path: "./images/me.jpg"
       type: portfolio
     values:
       layout: single
