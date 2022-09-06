@@ -1,9 +1,9 @@
 ---
-title: "Paper Title Number 2"
+title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
 collection: publications
 permalink: /publication/2022-5-31-paper-title-number-2
 venue: 'arxiv'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://arxiv.org/pdf/2206.00686.pdf'
 
 Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data
 ---
