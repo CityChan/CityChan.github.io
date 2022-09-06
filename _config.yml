@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Huancheng Chen"
   avatar           : "me.jpg"
-  bio              : "I am a third-year Ph.D. student in the Department of ECE at UT Austin, supervised by Prof. Haris Vikalo. I am also a member of the WNCG lab (Wireless Networking and Communications Group)."
+  bio              : "Ph.D Student, Electrical and Computer Engineering"
   location         : "Austin, TX"
-  employer         :
+  employer         : "The University of Texas at Austin"
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.hk/citations?user=WGrJ5H8AAAAJ&hl=zh-CN&oi=ao"
-  email            :
+  email            : "huanchengch@utexas.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "CityChan"
+  github           : "https://github.com/CityChan"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  # twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
