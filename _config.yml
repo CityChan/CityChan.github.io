@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Huancheng Chen"
   avatar           : "me.jpg"
-  bio              : "I am a third-year Ph.D. student in the [Department of Electrical and Computer Engineering](https://www.ece.utexas.edu/)"
+  bio              : "I am a third-year Ph.D. student in the" [Department of Electrical and Computer Engineering](https://www.ece.utexas.edu/)
   location         : "Austin, TX"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "CityChan"
   google_plus      :
   keybase          :
   instagram        :
