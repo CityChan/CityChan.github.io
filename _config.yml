@@ -56,19 +56,19 @@ alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# twitter:
+#   username               : &twitter
+# facebook:
+#   username               :
+#   app_id                 :
+#   publisher              :
+# og_image                 :  # Open Graph/Twitter default site image
+# # For specifying social profiles
+# # - https://developers.google.com/structured-data/customize/social-profiles
+# social:
+#   type                   : # Person or Organization (defaults to Person)
+#   name                   : # If the user or organization name differs from the site's name
+#   links: # An array of links to social media profiles
 
 
 # Analytics
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Huancheng Chen"
   avatar           : "me.jpg"
-  bio              : "I am a third-year Ph.D. student in the Department of ECE at UT Austin, supervised by Prof. Haris Vikalo. I am also a member of the WNCG lab (Wireless Networking and Communications Group)"
+  bio              : "I am a third-year Ph.D. student in the Department of ECE at UT Austin, supervised by Prof. Haris Vikalo. I am also a member of the WNCG lab (Wireless Networking and Communications Group)."
   location         : "Austin, TX"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6IccY6U7wvyXFbO_5fR15fHvhlxMfQZntVUE1OWBwK-vzXIJrcjtmIJ5bjNDREzHcd-PtCZ2BsvWlB8Zi1Xl-Wj-CVeg&user=WGrJ5H8AAAAJ"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  # twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
