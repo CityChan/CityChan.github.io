@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year Ph.D. student in the Department of [Electrical and Computer Engineering](https://www.ece.utexas.edu/) at [UT Austin](https://www.utexas.edu/), advised by [Haris Vikalo](https://users.ece.utexas.edu/~hvikalo/). I am also a member of the [WNCG](https://wncg.org/) lab (**W**ireless **N**etworking and **C**ommunications **G**roup).
+I am a third-year Ph.D. student in the Department of [Electrical and Computer Engineering](https://www.ece.utexas.edu/) at [UT Austin](https://www.utexas.edu/), advised by [Haris Vikalo](https://users.ece.utexas.edu/~hvikalo/). I am also a member of the [WNCG](https://wncg.org/) lab (**W**ireless **N**etworking and **C**ommunications **G**roup). My email is huanchengch [at] utexas.edu.
 
 My research focuses on Federated Learning and Reinforcement Learning in particular. Specifically, I am interested in 1) federated learning with data-heterogeneous and resource-heterogeneous clients 2) using reinforcement learning to improve client selection among millions of various clients in a realistic system. I am also interested in application of differential privacy in federated learning.
 
