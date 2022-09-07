@@ -2,7 +2,7 @@
 title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
 collection: publications
 
-venue: 'arxiv'
+venue: 'ICCV2021 Workshop'
 paperurl: 'https://arxiv.org/pdf/2109.10257.pdf'
 
 Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data
