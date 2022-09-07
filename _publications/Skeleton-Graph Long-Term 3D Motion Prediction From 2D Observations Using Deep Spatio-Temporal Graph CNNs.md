@@ -4,7 +4,7 @@ collection: publications
 
 venue: 'ICCV2021 Workshop'
 paperurl: 'https://arxiv.org/pdf/2109.10257.pdf'
-data: 2021-5-31
+data: 2021-05-31
 Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs
 ---
 Abduallah Mohamed， **Huancheng Chen**， Zhangyang Wang， Christian Claudel
