@@ -2,7 +2,7 @@
 title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
 collection: publications
 
-venue: 'arxiv'
+venue: 'arxiv2022'
 paperurl: 'https://arxiv.org/pdf/2206.00686.pdf'
 
 Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs
