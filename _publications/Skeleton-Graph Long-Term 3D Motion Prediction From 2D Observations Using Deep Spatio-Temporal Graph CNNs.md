@@ -1,7 +1,7 @@
 ---
 title: "Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs"
 collection: publications
-permalink: /publication/2021-5-31-paper-title-number-1
+
 venue: 'ICCV2021 Workshop'
 paperurl: 'https://arxiv.org/pdf/2109.10257.pdf'
 
