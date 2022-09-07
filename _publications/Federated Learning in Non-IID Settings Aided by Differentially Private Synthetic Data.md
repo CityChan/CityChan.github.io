@@ -2,10 +2,10 @@
 title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
 collection: publications
 
-venue: 'ICCV2021 Workshop'
+venue: 'arxiv'
 paperurl: 'https://arxiv.org/pdf/2109.10257.pdf'
 
-Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs
+Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data
 ---
 Abduallah Mohamed， **Huancheng Chen**， Zhangyang Wang， Christian Claudel
 
