@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Personal Page"
+title                    : "About Me"
 title_separator          : "-"
 name                     : &name "Huancheng Chen"
 description              : &description "personal description"
