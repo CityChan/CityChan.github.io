@@ -4,7 +4,7 @@ collection: publications
 
 venue: 'arxiv2022'
 paperurl: 'https://arxiv.org/pdf/2206.00686.pdf'
-
+data: 2022-5-31
 Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs
 ---
 **Huancheng Chen**， Haris Vikalo
