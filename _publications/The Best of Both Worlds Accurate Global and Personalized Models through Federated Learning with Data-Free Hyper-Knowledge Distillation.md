@@ -2,7 +2,7 @@
 title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
 collection: publications
 
-venue: 'arxiv2022'
+venue: 'accepted on ICLR2023'
 paperurl: ''
 date: 2022-10-28
 Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs
