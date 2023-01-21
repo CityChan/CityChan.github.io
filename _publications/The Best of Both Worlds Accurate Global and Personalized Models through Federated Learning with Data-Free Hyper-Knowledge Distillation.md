@@ -4,7 +4,7 @@ collection: publications
 
 venue: ' ICLR2023'
 paperurl: ''
-date: 2022-10-28
+date: 2023-01-20
 Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs
 ---
 **Huancheng Chen**，Johnny Wang, Haris Vikalo
