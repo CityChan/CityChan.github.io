@@ -10,7 +10,7 @@ redirect_from:
 
 Education
 ======
-* B.S. in Electrical Engineering, South China Uniersity of Technoligy, 2019
+* B.S. in Electrical Engineering, South China Uniersity of Technology, 2019
 * Ph.D in Electrical and Computer Engineering, The University of Texas at Austin, 2025 (expected)
 
 Work experience
