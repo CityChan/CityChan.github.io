@@ -22,4 +22,4 @@ My research focuses on **Federated Learning** and **Trustworthy Machine Learning
 
 Before joining UT Austin, I obtained my B.Eng degree from the department of Electrical Engineering and Automation, [South China University of Technology](https://www.scut.edu.cn/en/).
 
-Outside research，I am an electric guitar player (a fan of Pink Floyd), WOWer (for the alliance) and soccer player (a fan of Chelsea).
+Outside research，I like progressive rock (love Pink Floyd), WOW (Alliance), DND (Lawful Neutral) and football (a fan of Chelsea).
