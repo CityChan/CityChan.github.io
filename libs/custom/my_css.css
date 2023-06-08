@@ -11,7 +11,7 @@ h4 {
 .main-description p {
   margin-bottom: 0px; }
 .main-description .fa {
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 5px; }
 .paper {
   margin-bottom: 20px }
@@ -23,10 +23,10 @@ h4 {
   margin-top: 5px }
 .paper .button {
   display: inline-block;
-  height: 35px;
-  padding: 0 35px;
+  height: 25px;
+  padding: 0 25px;
   font-weight: 100;
-  line-height: 35px;
+  line-height: 25px;
   text-transform: none; }
 .section-header {
   text-transform: uppercase;
