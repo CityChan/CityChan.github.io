@@ -1,55 +1,28 @@
 experiences:
 
-- place: "Stanford"
-  time: "2020 - now"
-  title: "Postdoc"
-  subtitle: "MS&E"
+- place: "Toyota InfoTech Labs, Moutainview, CA"
+  time: "Summer 2022"
+  title: "Research Internship"
+  subtitle: "AI/ML Infrastructure & Data Lab<br/> Mentor: Johnny Wang"
   category: "work"
 
-- place: "MIT"
-  time: "2014 - 2020"
+- place: "Nokia Bell Lab, Murray Hill, NJ"
+  time: "Spring 2022"
+  title: "Research Internship"
+  subtitle: "Mathematics & Algorithms Research Group<br/> Mentor: Iraj Saniee"
+  category: "work"
+
+
+
+- place: "University of Texas at Austin, Austin, Texas"
+  time: "Jan 2020 – present"
   title: "Ph.D. Student"
-  subtitle: "Media Lab, Laboratory for Social Machines"
+  subtitle: "Electrical and Computer Engineering<br/> Advisor: Haris Vikalo"
   category: "school"
 
-- place: "Facebook"
-  time: "Summer 2019"
-  title: "Research Scientist, Intern"
-  subtitle: "Core Data Science"
-  category: "work"
 
-- place: "LinkedIn"
-  time: "Summer 2016"
-  title: "Research Scientist, Intern"
-  subtitle: "Experimentation Group"
-  category: "work"
-
-- place: "Amazon"
-  time: "Summer 2014"
-  title: "Machine Learning Scientist, Intern"
-  subtitle: "Scalable Machine Learning Group"
-  category: "work"
-
-- place: "Yahoo! Labs"
-  time: "Feb-Aug 2013"
-  title: "Research Scientist, Intern"
-  subtitle: "Social Media Engagement Group"
-  category: "work"
-
-- place: "EM-DMKM"
-  time: "Sep 2011 – Aug 2013"
-  title: "M.Sc. Student"
-  subtitle: "Masters in Data Mining and Knowledge Management <br/> Year 1: University Pierre et Marie Curie <br/> Year 2: Universitat Politecnica de Catalunya <br/>"
-  category: "school"
-
-- place: "Jozef Stefan Institute"
-  time: "Jan-Aug 2011"
-  title: "Research Assistant"
-  subtitle: "Department of Knowledge Technologies"
-  category: "work"
-
-- place: "Staffordshire University"
-  time: "2007 - 2010"
+- place: "South China University of Technology, Guangzhou, China"
+  time: "2014 - 2019"
   title: "B.Sc. Student"
-  subtitle: "Computing Science <br/> First Class Honours"
+  subtitle: "Electrical Engineering <br/> Rank 2/298"
   category: "school"
