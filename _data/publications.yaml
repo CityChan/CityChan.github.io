@@ -1,18 +1,18 @@
 papers:
 
-  - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
-    authors: "<b>Huancheng Chen</b>, Johnny Wang, Haris Vikalo"
-    venue: "ICLR'22: International Conference on Learning Representation (poster)"
-    paper_pdf: "/assets/publications/2023_iclr/paper.pdf"
-    code: "https://github.com/CityChan/Federated-Hyper-Knowledge-Distillation"
-    video: "https://iclr.cc/virtual/2023/poster/10802"
-    selected: y
-
   - title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "CVPR'23: Conference on Computer Vision and Pattern Recognition FedVision Workshop (oral)"
     paper_pdf: "/assets/publications/2023_cvpr/paper.pdf"
     code: "https://github.com/CityChan/Federated-DPMS"
+    selected: y
+    
+  - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
+    authors: "<b>Huancheng Chen</b>, Johnny Wang, Haris Vikalo"
+    venue: "ICLR'23: International Conference on Learning Representation (poster)"
+    paper_pdf: "/assets/publications/2023_iclr/paper.pdf"
+    code: "https://github.com/CityChan/Federated-Hyper-Knowledge-Distillation"
+    video: "https://iclr.cc/virtual/2023/poster/10802"
     selected: y
 
   - title: "Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs"
