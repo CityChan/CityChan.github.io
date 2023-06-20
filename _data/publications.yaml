@@ -5,6 +5,7 @@ papers:
     venue: "CVPR'23: Conference on Computer Vision and Pattern Recognition FedVision Workshop (oral)"
     paper_pdf: "/assets/publications/2023_cvpr/paper.pdf"
     code: "https://github.com/CityChan/Federated-DPMS"
+    poster: "/assets/publications/2023_cvpr/slide.pdf"
     selected: y
     
   - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
