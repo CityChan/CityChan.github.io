@@ -1,6 +1,6 @@
 papers:
 
-- title: "Accelerating Non-IID Federated Learning via Heterogeneity-Guided Client Sampling"
+  - title: "Accelerating Non-IID Federated Learning via Heterogeneity-Guided Client Sampling"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "arXiv 2023"
     paper_pdf: "/assets/publications/2023_arxiv/paper.pdf"
