@@ -1,5 +1,10 @@
 papers:
 
+  - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
+    authors: "<b>Huancheng Chen</b>, Haris Vikalo"
+    venue: "in submission"
+    selected: y
+
   - title: "Accelerating Non-IID Federated Learning via Heterogeneity-Guided Client Sampling"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "arXiv 2023"
