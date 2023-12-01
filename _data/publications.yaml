@@ -2,7 +2,8 @@ papers:
 
   - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "in submission"
+    venue: "axXiv 2023"
+    paper_pdf: "/assets/publications/2023_arxiv_2/paper.pdf"
     selected: y
 
   - title: "Accelerating Non-IID Federated Learning via Heterogeneity-Guided Client Sampling"
