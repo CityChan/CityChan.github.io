@@ -2,7 +2,7 @@ papers:
 
   - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "axXiv 2023"
+    venue: "CVPR'24: Conference on Computer Vision and Pattern Recognition (poster)"
     paper_pdf: "/assets/publications/2023_arxiv_2/paper.pdf"
     selected: y
 
