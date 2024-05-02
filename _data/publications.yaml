@@ -2,14 +2,14 @@ papers:
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "ICML'24: International Conference on Machine Learning"
+    venue: "ICML'24: International Conference on Machine Learning (to appear)"
     paper_pdf: ""
     selected: y
 
 
   - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "CVPR'24: Conference on Computer Vision and Pattern Recognition (poster)"
+    venue: "CVPR'24: Conference on Computer Vision and Pattern Recognition (to appear)"
     paper_pdf: "/assets/publications/2023_arxiv_2/paper.pdf"
     selected: y
 
