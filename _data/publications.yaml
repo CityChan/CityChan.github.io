@@ -3,7 +3,7 @@ papers:
   - title: "Recovering Labels from Local Updates in Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "ICML'24: International Conference on Machine Learning (to appear)"
-    paper_pdf: ""
+    paper_pdf: "/assets/publications/2024_icml/paper.pd"
     selected: y
 
 
