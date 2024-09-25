@@ -1,5 +1,12 @@
 papers:
 
+  - title: "Heterogeneity-Guided Client Sampling: Towards Fast and Efficient Non-IID Federated Learning"
+    authors: "<b>Huancheng Chen</b>, Haris Vikalo"
+    venue: "NeurIPS'24: Conference on Neural Information Processing Systems (to appear)"
+    paper_pdf: "/assets/publications/2024_neurips/paper.pdf"
+    code: "https://github.com/CityChan/HiCS-FL/"
+    selected: y
+
   - title: "Recovering Labels from Local Updates in Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "ICML'24: International Conference on Machine Learning (poster)"
@@ -13,12 +20,6 @@ papers:
     paper_pdf: "https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_Mixed-Precision_Quantization_for_Federated_Learning_on_Resource-Constrained_Heterogeneous_Devices_CVPR_2024_paper.pdf"
     poster: "https://cvpr.thecvf.com/media/PosterPDFs/CVPR%202024/30436.png?t=1716823030.5793824"
     video: "https://youtu.be/KP1-XpgxCKc"  
-    selected: y
-
-  - title: "Accelerating Non-IID Federated Learning via Heterogeneity-Guided Client Sampling"
-    authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "arXiv 2023"
-    paper_pdf: "/assets/publications/2023_arxiv/paper.pdf"
     selected: y
 
   - title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
