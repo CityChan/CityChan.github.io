@@ -4,7 +4,6 @@ papers:
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Nidham Gazagnadou, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
-    code: ""
     selected: y
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
