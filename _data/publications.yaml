@@ -9,7 +9,7 @@ papers:
   - title: "Heterogeneity-Guided Client Sampling: Towards Fast and Efficient Non-IID Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "NeurIPS'24: Conference on Neural Information Processing Systems (poster)"
-    paper_pdf: "/assets/publications/2024_neurips/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2310.00198"
     selected: y
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
