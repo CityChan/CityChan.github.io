@@ -16,12 +16,16 @@ papers:
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "NeurIPS'24: Conference on Neural Information Processing Systems (poster)"
     paper_pdf: "https://arxiv.org/abs/2310.00198"
+    code: "https://github.com/CityChan/HiCS-FL"
+    poster: "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/95808.png?t=1731624332.6925325"
     selected: y
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue: "ICML'24: International Conference on Machine Learning (poster)"
     paper_pdf: "/assets/publications/2024_icml/paper.pdf"
+    code: "https://github.com/CityChan/Recovering-Label-from-Update"
+    poster: "https://icml.cc/media/PosterPDFs/ICML%202024/34600.png?t=1721134245.6822042"
     selected: y
 
 
