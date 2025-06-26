@@ -1,5 +1,11 @@
 experiences:
 
+- place: "Accenture, Mountain View, California"
+  time: "June 2025"
+  title: "AI Research Scientist"
+  subtitle: "Advanced AI Center"
+  category: "work"
+
 - place: "SonyAI, Austin, Texas"
   time: "Spring 2024"
   title: "Research Internship"
