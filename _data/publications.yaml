@@ -7,7 +7,7 @@ papers:
     selected: y
 
   - title: "Dual Low-Rank Adaptation for Continual Learning with Pre-Trained Models."
-    authors: "<b>Huancheng Chen</b>, Jingtao Li, Nidham Gazagnadou, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
+    authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
     selected: y
