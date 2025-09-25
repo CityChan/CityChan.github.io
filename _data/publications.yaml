@@ -1,12 +1,12 @@
 papers:
 
-  - title: "Boundary Attention Constrained Zero-Shot Layout-To-Image Generation."
+  - title: "Training-Free Layout-to-Image Generation with Marginal Attention Constraints"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv2/paper.pdf"
     selected: y
 
-  - title: "Dual Low-Rank Adaptation for Continual Learning with Pre-Trained Models."
+  - title: "Replay-Free Continual Low-Rank Adaptation with Dynamic Memory"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
