@@ -1,4 +1,9 @@
 papers:
+  - title: "Task-Agnostic Federated Continual Learning via Replay-Free Gradient Projection"
+    authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
+    venue: "arxiv"
+    paper_pdf: "/assets/publications/2025_arxiv1/paper.pdf"
+    selected: y
 
   - title: "Training-Free Layout-to-Image Generation with Marginal Attention Constraints"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
