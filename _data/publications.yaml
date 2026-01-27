@@ -1,4 +1,10 @@
 papers:
+  - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
+    authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
+    venue: "ICLR'26 International Conference on Learning Representation (poster)"
+    paper_pdf: "https://openreview.net/pdf?id=xJtxpJ6QdD"
+    selected: y
+
   - title: "Task-Agnostic Federated Continual Learning via Replay-Free Gradient Projection"
     authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
     venue: "arxiv"
