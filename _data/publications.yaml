@@ -1,4 +1,10 @@
 papers:
+  - title: "Regularized Calibration with Successive Rounding for Post-Training Quantization"
+    authors: "Seohyeon Cha, <b>Huancheng Chen</b>, Dongjun Kim, Haoran Zhang, Kevin Chan, Gustavo de Veciana, Haris Vikalo"
+    venue: "arxiv"
+    paper_pdf: "https://arxiv.org/abs/2602.05902"
+    selected: y
+
   - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
     authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
     venue: "ICLR'26 International Conference on Learning Representation (poster)"
@@ -9,19 +15,19 @@ papers:
     authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2025_arxiv1/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "Training-Free Layout-to-Image Generation with Marginal Attention Constraints"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv2/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "Replay-Free Continual Low-Rank Adaptation with Dynamic Memory"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "Heterogeneity-Guided Client Sampling: Towards Fast and Efficient Non-IID Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
