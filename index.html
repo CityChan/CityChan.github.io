@@ -58,14 +58,14 @@ title: Home
   </p>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
+    <li><div class="button active" data-ref="#papers-published">Published</div></li>
+    <li><div class="button" data-ref="#papers-preprint">Preprint</div></li>
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
+    <div class="tab-pane active" id="papers-published">
+      {% assign published_papers = site.data.publications.papers | where_exp: "paper", "paper.venue != 'arxiv'" %}
+      {% for paper in published_papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
@@ -100,8 +100,9 @@ title: Home
       {% endfor %}
     </div>
 
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
+    <div class="tab-pane" id="papers-preprint">
+      {% assign preprint_papers = site.data.publications.papers | where: "venue", "arxiv" %}
+      {% for paper in preprint_papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
