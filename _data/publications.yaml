@@ -3,7 +3,7 @@ papers:
     authors: "Seohyeon Cha, <b>Huancheng Chen</b>, Dongjun Kim, Haoran Zhang, Kevin Chan, Gustavo de Veciana, Haris Vikalo"
     venue: "arxiv"
     paper_pdf: "https://arxiv.org/abs/2602.05902"
-    selected: y
+    selected: n
 
   - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
     authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
