@@ -98,6 +98,40 @@ html.dark-mode .news-scroll::-webkit-scrollbar-thumb:hover {
   background: #7db3f5;
 }
 
+/* Paper thumbnail layout */
+.paper-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.paper-thumb {
+  flex: 0 0 130px;
+}
+.paper-thumb img {
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  display: block;
+  transition: opacity 0.2s;
+}
+.paper-thumb img:hover {
+  opacity: 0.85;
+}
+.paper-info {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 549px) {
+  .paper-row { flex-direction: column; }
+  .paper-thumb { flex: none; width: 100%; }
+  .paper-thumb img { width: 100%; height: auto; }
+}
+html.dark-mode .paper-thumb img {
+  border-color: #2d3561;
+}
+
 /* Research keyword highlight */
 .keyword {
   color: #2055A5;
