@@ -10,9 +10,6 @@ h4 {
   margin-bottom: 0px; }
 .main-description p {
   margin-bottom: 0px; }
-.main-description .fa {
-  font-size: 22px;
-  margin-top: 5px; }
 .paper {
   margin-bottom: 20px }
 .paper .title {
@@ -78,11 +75,19 @@ h4 {
 }
 
 /* Social icon links */
+.social-icons a,
+.social-icons a:visited,
+.social-icons a:hover,
+.social-icons a:active {
+  text-decoration: none !important;
+}
 .social-icons a {
   color: inherit;
-  text-decoration: none;
   margin-right: 8px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 1;
 }
 .social-icons a:hover {
   color: #33C3F0;
@@ -90,7 +95,8 @@ h4 {
 .main-description .social-icons .fa,
 .main-description .social-icons .ai {
   font-size: 22px;
-  margin-top: 5px;
+  display: block;
+  line-height: 1;
 }
 
 /* Larger than phone */
