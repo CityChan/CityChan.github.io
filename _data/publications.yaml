@@ -67,6 +67,7 @@ papers:
     paper_pdf: "/assets/publications/2023_cvpr/paper.pdf"
     code: "https://github.com/CityChan/Federated-DPMS"
     poster: "/assets/publications/2023_cvpr/slide.pdf"
+    image: "https://raw.githubusercontent.com/CityChan/Federated-DPMS/main/img/DPMS.png"
     selected: y
 
   - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
@@ -75,6 +76,7 @@ papers:
     paper_pdf: "/assets/publications/2023_iclr/paper.pdf"
     code: "https://github.com/CityChan/Federated-Hyper-Knowledge-Distillation"
     video: "https://iclr.cc/virtual/2023/poster/10802"
+    image: "https://iclr.cc/media/PosterPDFs/ICLR%202023/10802-thumb.png?t=1680756443.0308425"
     selected: y
 
   - title: "Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs"
@@ -82,4 +84,5 @@ papers:
     venue: "ICCV'21: International Conference on Computer Vision Workshop"
     paper_pdf: "/assets/publications/2021_iccvw/paper.pdf"
     code: "https://github.com/CityChan/Skeleton-Graph"
+    image: "https://raw.githubusercontent.com/CityChan/Skeleton-Graph/main/img/SkeletonGraphModel.png"
     selected: y
