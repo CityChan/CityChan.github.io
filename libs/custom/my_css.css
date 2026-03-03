@@ -219,3 +219,104 @@ h4 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
+
+/* ===== Dark Mode Toggle Button ===== */
+.dark-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: #555;
+  padding: 0;
+  float: right;
+  line-height: 6.5rem;
+  transition: color 0.2s;
+}
+.dark-toggle:hover { color: #33C3F0; }
+@media (min-width: 750px) {
+  .dark-toggle { display: block; }
+}
+
+/* ===== Dark Mode Overrides ===== */
+html.dark-mode body {
+  background-color: #1a1a2e;
+  color: #dde1f0;
+}
+html.dark-mode a,
+html.dark-mode a:visited {
+  color: #7db3f5;
+}
+html.dark-mode a:hover {
+  color: #a8ccfa;
+}
+
+/* Navbar */
+html.dark-mode .navbar,
+html.dark-mode .navbar-spacer {
+  background: #16213e;
+  border-color: #2d3561;
+}
+html.dark-mode .navbar-link {
+  color: #dde1f0;
+}
+html.dark-mode .navbar-link:hover,
+html.dark-mode .navbar-link.active {
+  color: #7db3f5;
+}
+html.dark-mode .dark-toggle {
+  color: #dde1f0;
+}
+
+/* Sections & Footer */
+html.dark-mode .docs-section {
+  border-top-color: #2d3561;
+}
+html.dark-mode .footer {
+  border-top-color: #2d3561;
+  color: rgba(221, 225, 240, 0.45);
+}
+
+/* Paper buttons */
+html.dark-mode .button,
+html.dark-mode .button:visited {
+  color: #7db3f5;
+  border-color: #7db3f5;
+}
+html.dark-mode .button:hover,
+html.dark-mode .button:focus {
+  background-color: #7db3f5;
+  color: #1a1a2e;
+}
+
+/* Keywords */
+html.dark-mode .keyword {
+  color: #a5c8ff;
+}
+
+/* Social icon hover in dark mode */
+html.dark-mode .social-icons a {
+  color: #dde1f0;
+}
+
+/* Timeline */
+html.dark-mode .flag {
+  background: #242b4d;
+  color: #dde1f0;
+}
+html.dark-mode .time {
+  background: #242b4d;
+}
+html.dark-mode .direction-l .flag:after {
+  border-left-color: #242b4d;
+}
+html.dark-mode .direction-r .flag:after {
+  border-right-color: #242b4d;
+}
+html.dark-mode .direction-l .flag:before,
+html.dark-mode .direction-r .flag:before {
+  background: #1a1a2e;
+}
+html.dark-mode .desc {
+  color: #dde1f0;
+}

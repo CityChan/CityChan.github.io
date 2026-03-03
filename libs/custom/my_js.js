@@ -24,6 +24,23 @@ $(document).ready(function() {
     $document.on('click', closePopover)
     $('a[href^="#"]').on('click', smoothScroll)
     buildSnippets();
+    initDarkMode();
+  }
+
+  function initDarkMode() {
+    var $toggle = $('#darkToggle');
+    var $icon = $('#darkToggleIcon');
+
+    // Sync icon with the class set by the anti-FOUC script
+    if ($('html').hasClass('dark-mode')) {
+      $icon.removeClass('fa-moon-o').addClass('fa-sun-o');
+    }
+
+    $toggle.on('click', function() {
+      var isDark = $('html').toggleClass('dark-mode').hasClass('dark-mode');
+      $icon.toggleClass('fa-moon-o', !isDark).toggleClass('fa-sun-o', isDark);
+      try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch(e) {}
+    });
   }
 
   function smoothScroll(e) {
