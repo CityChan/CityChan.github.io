@@ -105,6 +105,7 @@ html.dark-mode .news-scroll::-webkit-scrollbar-thumb:hover {
   align-items: flex-start;
 }
 .paper-thumb {
+  display: none; /* temporarily hidden */
   flex: 0 0 130px;
   width: 130px;
   height: 90px;
