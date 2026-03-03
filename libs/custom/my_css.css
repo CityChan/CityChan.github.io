@@ -68,6 +68,36 @@ h4 {
   padding: 3px;
 }
 
+/* News scroll box */
+.news-scroll {
+  max-height: 210px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+.news-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.news-scroll::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 2px;
+}
+.news-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+.news-scroll::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+html.dark-mode .news-scroll::-webkit-scrollbar-track {
+  background: #242b4d;
+}
+html.dark-mode .news-scroll::-webkit-scrollbar-thumb {
+  background: #4a5280;
+}
+html.dark-mode .news-scroll::-webkit-scrollbar-thumb:hover {
+  background: #7db3f5;
+}
+
 /* Research keyword highlight */
 .keyword {
   color: #2055A5;
