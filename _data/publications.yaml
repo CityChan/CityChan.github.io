@@ -3,34 +3,35 @@ papers:
     authors: "Seohyeon Cha, <b>Huancheng Chen</b>, Dongjun Kim, Haoran Zhang, Kevin Chan, Gustavo de Veciana, Haris Vikalo"
     venue: "arxiv"
     paper_pdf: "https://arxiv.org/abs/2602.05902"
-    image: "https://arxiv.org/html/2602.05902v1/x1.png"
+    image: "/assets/img/papers/2026-arxiv-calibration.png"
     selected: n
 
   - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
     authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
     venue: "ICLR'26 International Conference on Learning Representation (poster)"
     paper_pdf: "https://openreview.net/pdf?id=xJtxpJ6QdD"
+    image: "/assets/img/papers/2026-iclr-qgp.png"
     selected: y
 
   - title: "Task-Agnostic Federated Continual Learning via Replay-Free Gradient Projection"
     authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2025_arxiv1/paper.pdf"
-    image: "https://arxiv.org/html/2509.21606v2/x1.png"
+    image: "/assets/img/papers/2025-arxiv-fedcl.png"
     selected: n
 
   - title: "Training-Free Layout-to-Image Generation with Marginal Attention Constraints"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv2/paper.pdf"
-    image: "https://arxiv.org/html/2411.10495v2/figures/example.png"
+    image: "/assets/img/papers/2024-arxiv-layout.png"
     selected: n
 
   - title: "Replay-Free Continual Low-Rank Adaptation with Dynamic Memory"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "arxiv"
     paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
-    image: "https://arxiv.org/html/2411.00623v3/x1.png"
+    image: "/assets/img/papers/2024-arxiv-lora.png"
     selected: n
 
   - title: "Heterogeneity-Guided Client Sampling: Towards Fast and Efficient Non-IID Federated Learning"
@@ -39,7 +40,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2310.00198"
     code: "https://github.com/CityChan/HiCS-FL"
     poster: "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/95808.png?t=1731624332.6925325"
-    image: "https://arxiv.org/html/2310.00198v2/images/fc.png"
+    image: "/assets/img/papers/2024-neurips-hicsfl.png"
     selected: y
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
@@ -48,7 +49,7 @@ papers:
     paper_pdf: "/assets/publications/2024_icml/paper.pdf"
     code: "https://github.com/CityChan/Recovering-Label-from-Update"
     poster: "https://icml.cc/media/PosterPDFs/ICML%202024/34600.png?t=1721134245.6822042"
-    image: "https://arxiv.org/html/2405.00955v1/x1.png"
+    image: "/assets/img/papers/2024-icml-labels.png"
     selected: y
 
   - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
@@ -58,7 +59,7 @@ papers:
     poster: "https://cvpr.thecvf.com/media/PosterPDFs/CVPR%202024/30436.png?t=1716823030.5793824"
     code: "https://github.com/CityChan/Federated-Mixed-Precision-Quantization"
     video: "https://youtu.be/KP1-XpgxCKc"
-    image: "https://arxiv.org/html/2311.18129v2/x1.png"
+    image: "/assets/img/papers/2024-cvpr-mixquant.png"
     selected: y
 
   - title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
@@ -67,7 +68,7 @@ papers:
     paper_pdf: "/assets/publications/2023_cvpr/paper.pdf"
     code: "https://github.com/CityChan/Federated-DPMS"
     poster: "/assets/publications/2023_cvpr/slide.pdf"
-    image: "https://raw.githubusercontent.com/CityChan/Federated-DPMS/main/img/DPMS.png"
+    image: "/assets/img/papers/2023-cvpr-dpms.png"
     selected: y
 
   - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
@@ -76,7 +77,7 @@ papers:
     paper_pdf: "/assets/publications/2023_iclr/paper.pdf"
     code: "https://github.com/CityChan/Federated-Hyper-Knowledge-Distillation"
     video: "https://iclr.cc/virtual/2023/poster/10802"
-    image: "https://iclr.cc/media/PosterPDFs/ICLR%202023/10802-thumb.png?t=1680756443.0308425"
+    image: "/assets/img/papers/2023-iclr-fedhkd.png"
     selected: y
 
   - title: "Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs"
@@ -84,5 +85,5 @@ papers:
     venue: "ICCV'21: International Conference on Computer Vision Workshop"
     paper_pdf: "/assets/publications/2021_iccvw/paper.pdf"
     code: "https://github.com/CityChan/Skeleton-Graph"
-    image: "https://raw.githubusercontent.com/CityChan/Skeleton-Graph/main/img/SkeletonGraphModel.png"
+    image: "/assets/img/papers/2021-iccv-skeleton.png"
     selected: y

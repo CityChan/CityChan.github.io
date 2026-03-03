@@ -106,13 +106,24 @@ html.dark-mode .news-scroll::-webkit-scrollbar-thumb:hover {
 }
 .paper-thumb {
   flex: 0 0 130px;
-}
-.paper-thumb img {
   width: 130px;
   height: 90px;
-  object-fit: cover;
-  border: 1px solid #e0e0e0;
+  border: 1.5px dashed #d0d0d0;
   border-radius: 4px;
+  background: #f7f7f7;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.paper-thumb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.paper-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
   transition: opacity 0.2s;
 }
@@ -125,11 +136,11 @@ html.dark-mode .news-scroll::-webkit-scrollbar-thumb:hover {
 }
 @media (max-width: 549px) {
   .paper-row { flex-direction: column; }
-  .paper-thumb { flex: none; width: 100%; }
-  .paper-thumb img { width: 100%; height: auto; }
+  .paper-thumb { flex: none; width: 100%; height: 120px; }
 }
-html.dark-mode .paper-thumb img {
-  border-color: #2d3561;
+html.dark-mode .paper-thumb {
+  background: #242b4d;
+  border-color: #4a5280;
 }
 
 /* Research keyword highlight */
