@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo $PATH)",
+      "Bash(env)",
+      "Read(//c/Users/Huan/AppData/Local/Programs/**)",
+      "Bash(node --version)",
+      "Bash(npx --version)"
+    ]
+  }
+}

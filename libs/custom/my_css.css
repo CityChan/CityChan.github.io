@@ -71,6 +71,28 @@ h4 {
   padding: 3px;
 }
 
+/* Research keyword highlight */
+.keyword {
+  color: #2055A5;
+  font-weight: 600;
+}
+
+/* Social icon links */
+.social-icons a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 8px;
+  display: inline-block;
+}
+.social-icons a:hover {
+  color: #33C3F0;
+}
+.main-description .social-icons .fa,
+.main-description .social-icons .ai {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {

@@ -6,13 +6,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Martin Saveski">
-  <meta name="author" content="Martin Saveski">
-  <meta property="og:title" content="Martin Saveski" />
+  <meta name="description" content="{{ site.data.main_info.name }} — Senior Research Scientist at Accenture Advanced AI Center. Research on trustworthy ML, continual learning, federated learning, and model compression.">
+  <meta name="author" content="{{ site.data.main_info.name }}">
+  <meta property="og:title" content="{{ site.data.main_info.name }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.martinsaveski.com" />
-  <meta property="og:site_name" content="Martin Saveski" />
-  <link rel="canonical" href="http://www.martinsaveski.com" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
+  <meta property="og:description" content="Senior Research Scientist at Accenture Advanced AI Center. Research on trustworthy ML, continual learning, federated learning, and model compression." />
+  <link rel="canonical" href="{{ site.url }}" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,7 +21,9 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap' rel='stylesheet'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,13 +54,40 @@
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
   <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
   <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+
+  <!-- Schema.org Structured Data
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.data.main_info.name }}",
+    "jobTitle": "Senior Research Scientist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Accenture Advanced AI Center"
+    },
+    "url": "{{ site.url }}",
+    "email": "huanchengch@gmail.com",
+    "sameAs": [
+      "{{ site.data.main_info.twitter }}",
+      "{{ site.data.main_info.linkedin }}",
+      "{{ site.data.main_info.github }}",
+      "{{ site.data.main_info.google_scholar }}"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Texas at Austin"
+    },
+    "knowsAbout": ["Machine Learning", "Continual Learning", "Federated Learning", "Model Compression", "Large Language Models"]
+  }
+  </script>
 
 </head>
 <body>
@@ -69,28 +99,28 @@
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}' alt="{{ site.data.main_info.name }} profile photo"></a>
         </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
             <p>{{ site.data.main_info.title }}</p>
             <p>{{ site.data.main_info.email }}</p>
-            <p>
-              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+            <p class="social-icons">
+              <a href="{{ site.data.main_info.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
-              </span>
+              </a>
 
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+              <a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
+              </a>
 
-              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+              <a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
+              </a>
 
-              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+              <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
                 <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-              </span>
+              </a>
             </p>
         </div>
       </div>
@@ -119,19 +149,19 @@
         <div class="four columns">
           {{ site.data.main_info.email }}
         </div>
-        <div class="four columns">
-          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+        <div class="four columns social-icons">
+          <a href="{{ site.data.main_info.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+          </a>
+          <a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+          </a>
+          <a href="{{ site.data.main_info.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="fa fa-google-scholar" aria-hidden="true"></i>
-          </span>
+          </a>
+          <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -140,9 +170,6 @@
 
   <!-- Google Analytics -->
   {% include google_analytics.html %}
-
-  <!-- do not remove -->
-  <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
