@@ -300,12 +300,19 @@ html.dark-mode .social-icons a {
 }
 
 /* Timeline */
+html.dark-mode .timeline:before {
+  background: #4a5280;
+}
 html.dark-mode .flag {
   background: #242b4d;
   color: #dde1f0;
 }
+html.dark-mode .time-wrapper {
+  color: #e07090;
+}
 html.dark-mode .time {
   background: #242b4d;
+  color: #e07090;
 }
 html.dark-mode .direction-l .flag:after {
   border-left-color: #242b4d;
@@ -316,7 +323,25 @@ html.dark-mode .direction-r .flag:after {
 html.dark-mode .direction-l .flag:before,
 html.dark-mode .direction-r .flag:before {
   background: #1a1a2e;
+  border-color: #e07090;
 }
 html.dark-mode .desc {
   color: #dde1f0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Publication Tabs */
+html.dark-mode ul.tab-nav {
+  border-bottom-color: #2d3561;
+}
+html.dark-mode ul.tab-nav li .button {
+  color: #7db3f5;
+  border-color: #7db3f5;
+}
+html.dark-mode ul.tab-nav li .active.button {
+  color: #dde1f0;
+  background-color: #242b4d;
+  border-color: #7db3f5;
+  border-bottom-color: #242b4d;
 }
