@@ -1,4 +1,11 @@
 papers:
+  - title: "Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory"
+    authors: "Zhenting Wang, <b>Huancheng Chen</b>, Jiayun Wang, Wei Wei"
+    venue: "arxiv"
+    paper_pdf: "https://arxiv.org/abs/2603.04257"
+    image: "/assets/img/papers/2026-arxiv-memex.png"
+    selected: n
+
   - title: "Regularized Calibration with Successive Rounding for Post-Training Quantization"
     authors: "Seohyeon Cha, <b>Huancheng Chen</b>, Dongjun Kim, Haoran Zhang, Kevin Chan, Gustavo de Veciana, Haris Vikalo"
     venue: "arxiv"
