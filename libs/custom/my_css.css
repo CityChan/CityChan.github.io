@@ -421,3 +421,18 @@ html.dark-mode ul.tab-nav li .active.button {
   border-color: #7db3f5;
   border-bottom-color: #242b4d;
 }
+/* Venue styling */
+.venue-badge {
+  color: #c0392b;
+  font-weight: 700;
+  font-style: normal;
+}
+.venue-full {
+  color: #666;
+}
+html.dark-mode .venue-badge {
+  color: #f08080;
+}
+html.dark-mode .venue-full {
+  color: #9aa0b8;
+}

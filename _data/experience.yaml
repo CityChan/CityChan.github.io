@@ -18,16 +18,16 @@ experiences:
   subtitle: "Electrical and Computer Engineering<br/> Advisor: Haris Vikalo"
   category: "school"
   
-- place: "Toyota InfoTech Labs, Moutainview, CA"
+- place: "Toyota InfoTech Labs, Mountain View, CA"
   time: "Summer 2022"
   title: "Research Internship"
-  subtitle: "AI/ML Infrastructure & Data Lab<br/> Mentor: Johnny Wang"
+  subtitle: "AI/ML Infrastructure & Data Lab"
   category: "work"
 
 - place: "Nokia Bell Lab, Murray Hill, NJ"
   time: "Spring 2022"
   title: "Research Internship"
-  subtitle: "Mathematics & Algorithms Research Group<br/> Mentor: Iraj Saniee"
+  subtitle: "Mathematics & Algorithms Research Group"
   category: "work"
 
 

@@ -15,7 +15,8 @@ papers:
 
   - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
     authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
-    venue: "ICLR'26 International Conference on Learning Representation (poster)"
+    venue_short: "ICLR'26"
+    venue: "International Conference on Learning Representation (poster)"
     paper_pdf: "https://openreview.net/pdf?id=xJtxpJ6QdD"
     image: "/assets/img/papers/2026-iclr-qgp.png"
     selected: y
@@ -43,7 +44,8 @@ papers:
 
   - title: "Heterogeneity-Guided Client Sampling: Towards Fast and Efficient Non-IID Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "NeurIPS'24: Conference on Neural Information Processing Systems (poster)"
+    venue_short: "NeurIPS'24"
+    venue: "Conference on Neural Information Processing Systems (poster)"
     paper_pdf: "https://arxiv.org/abs/2310.00198"
     code: "https://github.com/CityChan/HiCS-FL"
     poster: "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/95808.png?t=1731624332.6925325"
@@ -52,7 +54,8 @@ papers:
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "ICML'24: International Conference on Machine Learning (poster)"
+    venue_short: "ICML'24"
+    venue: "International Conference on Machine Learning (poster)"
     paper_pdf: "/assets/publications/2024_icml/paper.pdf"
     code: "https://github.com/CityChan/Recovering-Label-from-Update"
     poster: "https://icml.cc/media/PosterPDFs/ICML%202024/34600.png?t=1721134245.6822042"
@@ -61,7 +64,8 @@ papers:
 
   - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "CVPR'24: Conference on Computer Vision and Pattern Recognition (poster)"
+    venue_short: "CVPR'24"
+    venue: "Conference on Computer Vision and Pattern Recognition (poster)"
     paper_pdf: "https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_Mixed-Precision_Quantization_for_Federated_Learning_on_Resource-Constrained_Heterogeneous_Devices_CVPR_2024_paper.pdf"
     poster: "https://cvpr.thecvf.com/media/PosterPDFs/CVPR%202024/30436.png?t=1716823030.5793824"
     code: "https://github.com/CityChan/Federated-Mixed-Precision-Quantization"
@@ -71,7 +75,8 @@ papers:
 
   - title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
-    venue: "CVPR'23: Conference on Computer Vision and Pattern Recognition FedVision Workshop (oral)"
+    venue_short: "CVPR'23"
+    venue: "Conference on Computer Vision and Pattern Recognition FedVision Workshop (oral)"
     paper_pdf: "/assets/publications/2023_cvpr/paper.pdf"
     code: "https://github.com/CityChan/Federated-DPMS"
     poster: "/assets/publications/2023_cvpr/slide.pdf"
@@ -80,7 +85,8 @@ papers:
 
   - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
     authors: "<b>Huancheng Chen</b>, Johnny Wang, Haris Vikalo"
-    venue: "ICLR'23: International Conference on Learning Representation (poster)"
+    venue_short: "ICLR'23"
+    venue: "International Conference on Learning Representation (poster)"
     paper_pdf: "/assets/publications/2023_iclr/paper.pdf"
     code: "https://github.com/CityChan/Federated-Hyper-Knowledge-Distillation"
     video: "https://iclr.cc/virtual/2023/poster/10802"
@@ -89,7 +95,8 @@ papers:
 
   - title: "Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs"
     authors: "Abduallah Mohamed <sup>‡</sup>, <b>Huancheng Chen<sup>‡</sup></b>, Zhangyang Wang, Christian Claudel"
-    venue: "ICCV'21: International Conference on Computer Vision Workshop"
+    venue_short: "ICCV'21"
+    venue: "International Conference on Computer Vision Workshop"
     paper_pdf: "/assets/publications/2021_iccvw/paper.pdf"
     code: "https://github.com/CityChan/Skeleton-Graph"
     image: "/assets/img/papers/2021-iccv-skeleton.png"
