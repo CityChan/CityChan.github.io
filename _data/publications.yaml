@@ -18,6 +18,7 @@ papers:
     venue_short: "ICLR'26"
     venue: "International Conference on Learning Representation (poster)"
     paper_pdf: "https://openreview.net/pdf?id=xJtxpJ6QdD"
+    code: "https://github.com/Dongjun0101/Quantized-Gradient-Projection-for-Memory-Efficient-Continual-Learning"
     image: "/assets/img/papers/2026-iclr-qgp.png"
     selected: y
 
