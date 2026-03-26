@@ -450,5 +450,5 @@ html.dark-mode .footer-updated {
 
 /* Highlight author name in publication list */
 .paper-info p:not(.title) b {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
