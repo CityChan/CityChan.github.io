@@ -447,3 +447,8 @@ html.dark-mode .venue-full {
 html.dark-mode .footer-updated {
   color: rgba(221, 225, 240, 0.3);
 }
+
+/* Highlight author name in publication list */
+.paper-info p:not(.title) b {
+  text-decoration: underline;
+}
