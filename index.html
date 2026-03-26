@@ -133,7 +133,7 @@ title: Home
   <ul class="timeline">
     {% for exp in site.data.experience.experiences %}
     <li>
-      {% if exp.category == "work" %}
+      {% if forloop.index0 % 2 == 0 %}
       <div class="direction-l">
       {% else %}
       <div class="direction-r">
