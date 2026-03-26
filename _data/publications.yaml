@@ -32,7 +32,7 @@ papers:
   - title: "Training-Free Layout-to-Image Generation with Marginal Attention Constraints"
     venue_short: "CVPR'26"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
-    venue: "Conference on Computer Vision and Pattern Recognition: Efficient and On-Device Generation Workshop"
+    venue: "Efficient and On-Device Generation Workshop"
     paper_pdf: "https://arxiv.org/abs/2411.10495"
     image: "/assets/img/papers/2024-arxiv-layout.png"
     selected: y
@@ -40,7 +40,7 @@ papers:
   - title: "Replay-Free Continual Low-Rank Adaptation with Dynamic Memory"
     venue_short: "CVPR'26"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
-    venue: "Conference on Computer Vision and Pattern Recognition: Domain Generalization Workshop"
+    venue: "Domain Generalization Workshop"
     paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
     image: "/assets/img/papers/2024-arxiv-lora.png"
     selected: y
@@ -79,7 +79,7 @@ papers:
   - title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue_short: "CVPR'23"
-    venue: "Conference on Computer Vision and Pattern Recognition: FedVision Workshop (oral)"
+    venue: "Conference on Computer Vision and Pattern Recognition FedVision Workshop (oral)"
     paper_pdf: "/assets/publications/2023_cvpr/paper.pdf"
     code: "https://github.com/CityChan/Federated-DPMS"
     poster: "/assets/publications/2023_cvpr/slide.pdf"
