@@ -6,18 +6,18 @@ experiences:
   subtitle: "Advanced AI Center"
   category: "work"
 
+- place: "University of Texas at Austin"
+  time: "2020 – 2025"
+  title: "Ph.D. Student"
+  subtitle: "Electrical and Computer Engineering<br/> Advisor: Haris Vikalo"
+  category: "school"
+
 - place: "SonyAI"
   time: "Spring 2024"
   title: "Research Internship"
   subtitle: "PPML team"
   category: "work"
 
-- place: "University of Texas at Austin"
-  time: "2020 – 2025"
-  title: "Ph.D. Student"
-  subtitle: "Electrical and Computer Engineering<br/> Advisor: Haris Vikalo"
-  category: "school"
-  
 - place: "Toyota InfoTech Labs"
   time: "Summer 2022"
   title: "Research Internship"
@@ -29,8 +29,6 @@ experiences:
   title: "Research Internship"
   subtitle: "Mathematics & Algorithms Research Group"
   category: "work"
-
-
 
 - place: "South China University of Technology"
   time: "2015 - 2019"
