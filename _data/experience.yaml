@@ -1,12 +1,12 @@
 experiences:
 
-- place: "Accenture, Mountain View, CA"
+- place: "Accenture"
   time: "June 2025"
   title: "Senior AI Research Scientist"
   subtitle: "Advanced AI Center"
   category: "work"
 
-- place: "SonyAI, Austin, Texas"
+- place: "SonyAI"
   time: "Spring 2024"
   title: "Research Internship"
   subtitle: "PPML team"
@@ -24,7 +24,7 @@ experiences:
   subtitle: "AI/ML Infrastructure & Data Lab"
   category: "work"
 
-- place: "Nokia Bell Lab, Murray Hill, NJ"
+- place: "Nokia Bell Lab"
   time: "Spring 2022"
   title: "Research Internship"
   subtitle: "Mathematics & Algorithms Research Group"
