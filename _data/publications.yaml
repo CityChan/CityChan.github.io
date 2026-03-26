@@ -41,7 +41,7 @@ papers:
     venue_short: "CVPR'26"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "Domain Generalization Workshop"
-    paper_pdf: "/assets/publications/2024_arxiv1/paper.pdf"
+    paper_pdf: "https://arxiv.org/abs/2411.00623"
     image: "/assets/img/papers/2024-arxiv-lora.png"
     selected: y
 

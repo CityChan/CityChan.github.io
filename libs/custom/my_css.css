@@ -436,3 +436,14 @@ html.dark-mode .venue-badge {
 html.dark-mode .venue-full {
   color: #9aa0b8;
 }
+
+/* Last updated timestamp */
+.footer-updated {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.35);
+  padding-bottom: 20px;
+}
+html.dark-mode .footer-updated {
+  color: rgba(221, 225, 240, 0.3);
+}
