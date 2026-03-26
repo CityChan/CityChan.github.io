@@ -453,8 +453,3 @@ html.dark-mode .footer-updated {
   text-decoration: underline !important;
 }
 
-/* Fix timeline circle alignment for long place names */
-.direction-l .flag-wrapper,
-.direction-r .flag-wrapper {
-  width: 100%;
-}
