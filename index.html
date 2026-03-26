@@ -133,7 +133,8 @@ title: Home
   <ul class="timeline">
     {% for exp in site.data.experience.experiences %}
     <li>
-      {% if forloop.index0 % 2 == 0 %}
+      {% assign mod = forloop.index0 | modulo: 2 %}
+      {% if mod == 0 %}
       <div class="direction-l">
       {% else %}
       <div class="direction-r">
