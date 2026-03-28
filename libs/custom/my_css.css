@@ -508,3 +508,13 @@ html.dark-mode .footer-updated {
     grid-template-columns: 1fr;
   }
 }
+
+/* Current job highlight in timeline */
+.flag-current {
+  background: #33C3F0 !important;
+  color: #fff !important;
+}
+html.dark-mode .flag-current {
+  background: #7db3f5 !important;
+  color: #1a1a2e !important;
+}
