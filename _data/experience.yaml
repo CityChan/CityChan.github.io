@@ -1,7 +1,13 @@
 experiences:
 
+- place: "Microsoft AI"
+  time: "March 2026"
+  title: "Applied Scientist II"
+  subtitle: "Mountain View, California"
+  category: "work"
+
 - place: "Accenture"
-  time: "June 2025"
+  time: "June 2025 – March 2026"
   title: "Senior AI Research Scientist"
   subtitle: "Advanced AI Center"
   category: "work"
