@@ -475,7 +475,6 @@ html.dark-mode .footer-updated {
   margin-top: 10px;
 }
 .game-card {
-  height: 190px;
   border-radius: 12px;
   background: linear-gradient(135deg, #1b2838, #2a475e);
   display: flex;
@@ -483,6 +482,15 @@ html.dark-mode .footer-updated {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+.game-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+.game-card:has(.game-title) {
+  height: 190px;
   padding: 20px;
 }
 .game-title {
