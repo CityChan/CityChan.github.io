@@ -466,3 +466,37 @@ html.dark-mode .footer-updated {
     grid-template-columns: 1fr;
   }
 }
+
+/* Game grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+.game-card {
+  height: 190px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1b2838, #2a475e);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.game-title {
+  color: #c7d5e0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.game-platform {
+  color: #66c0f4;
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+@media (max-width: 549px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
