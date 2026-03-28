@@ -453,3 +453,16 @@ html.dark-mode .footer-updated {
   text-decoration: underline !important;
 }
 
+
+/* Album grid */
+.album-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 10px;
+}
+@media (max-width: 549px) {
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
+}
