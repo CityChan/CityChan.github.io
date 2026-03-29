@@ -470,8 +470,9 @@ html.dark-mode .footer-updated {
   transform: scale(1.05);
 }
 .album-card img {
-  width: 100%;
-  max-width: 150px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 8px;
   display: block;
   margin: 0 auto;
