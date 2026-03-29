@@ -457,13 +457,42 @@ html.dark-mode .footer-updated {
 /* Album grid */
 .album-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
   margin-top: 10px;
 }
-@media (max-width: 549px) {
+.album-card {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.album-card:hover {
+  transform: scale(1.05);
+}
+.album-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.album-label {
+  margin-top: 6px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+.album-active img {
+  outline: 3px solid #33C3F0;
+}
+html.dark-mode .album-active img {
+  outline-color: #7db3f5;
+}
+@media (max-width: 749px) {
   .album-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 449px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
