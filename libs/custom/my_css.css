@@ -471,8 +471,10 @@ html.dark-mode .footer-updated {
 }
 .album-card img {
   width: 100%;
+  max-width: 150px;
   border-radius: 8px;
   display: block;
+  margin: 0 auto;
 }
 .album-label {
   margin-top: 6px;
