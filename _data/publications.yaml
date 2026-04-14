@@ -34,6 +34,7 @@ papers:
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
     venue: "Efficient and On-Device Generation Workshop"
     paper_pdf: "https://arxiv.org/abs/2411.10495"
+    code: "https://github.com/CityChan/Training-Free-Layout-to-Image-Generation-with-Marginal-Attention-Constraints"
     image: "/assets/img/papers/2024-arxiv-layout.png"
     selected: y
 
@@ -42,6 +43,7 @@ papers:
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "Domain Generalization Workshop"
     paper_pdf: "https://arxiv.org/abs/2411.00623"
+    code: "https://github.com/CityChan/Rehearsal-Free-Continual-Low-Rank-Adaptation-with-Dynamic-Memory"
     image: "/assets/img/papers/2024-arxiv-lora.png"
     selected: y
 
