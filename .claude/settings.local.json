@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL \"https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_231x87.jpg\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/dota2.jpg\")",
+      "Bash(curl -sL \"https://www.google.com/s2/favicons?domain=worldofwarcraft.blizzard.com&sz=64\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/wow.png\")",
+      "Bash(curl -sL \"https://www.google.com/s2/favicons?domain=magic.wizards.com&sz=64\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/mtg.png\")",
+      "Bash(curl -sL \"https://www.google.com/s2/favicons?domain=dota2.com&sz=64\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/dota2.png\")",
+      "Bash(curl -sL \"https://www.google.com/s2/favicons?domain=dota2.com&sz=48\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/dota2.png\")",
+      "Bash(curl -sL \"https://www.google.com/s2/favicons?domain=worldofwarcraft.blizzard.com&sz=48\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/wow.png\")",
+      "Bash(curl -sL \"https://www.google.com/s2/favicons?domain=magic.wizards.com&sz=48\" -o \"d:/Workspace/CityChan.github.io/assets/img/games/mtg.png\")",
+      "Bash(file \"d:/Workspace/CityChan.github.io/assets/img/games/\"*.png)"
+    ]
+  }
+}
