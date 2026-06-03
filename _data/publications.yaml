@@ -1,4 +1,11 @@
 papers:
+  - title: "Foundation-Preserving Adaptation via Generalized Rayleigh-Quotient Optimization"
+    authors: "Dongjun Kim, Adrian de Wynter, <b>Huancheng Chen</b>, Heasung Kim, Haris Vikalo"
+    venue: "arxiv"
+    paper_pdf: "https://arxiv.org/abs/2606.00132"
+    image: "/assets/img/papers/2026-arxiv-folora.png"
+    selected: n
+
   - title: "Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory"
     authors: "Zhenting Wang, <b>Huancheng Chen</b>, Jiayun Wang, Wei Wei"
     venue: "arxiv"
