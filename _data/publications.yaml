@@ -31,7 +31,7 @@ papers:
 
   - title: "Task-Agnostic Federated Continual Learning via Replay-Free Gradient Projection"
     authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
-    venue_short: "TMLR"
+    venue_short: "TMLR'26"
     venue: "Transactions on Machine Learning Research"
     paper_pdf: "https://openreview.net/forum?id=GW4aw0fUKC"
     image: "/assets/img/papers/2025-arxiv-fedcl.png"
