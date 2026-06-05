@@ -33,7 +33,7 @@ papers:
     authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
     venue_short: "TMLR"
     venue: "Transactions on Machine Learning Research"
-    paper_pdf: "/assets/publications/2025_arxiv1/paper.pdf"
+    paper_pdf: "https://openreview.net/forum?id=GW4aw0fUKC"
     image: "/assets/img/papers/2025-arxiv-fedcl.png"
     selected: y
 
