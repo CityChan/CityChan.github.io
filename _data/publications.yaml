@@ -1,4 +1,11 @@
 papers:
+  - title: "CacheRL: Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward"
+    authors: "Md Amirul Islam, Sumiran Thakur, <b>Huancheng Chen</b>, Su Min Park, Jiayun Wang, Gyuhak Kim"
+    venue: "arxiv"
+    paper_pdf: "https://arxiv.org/abs/2606.14179"
+    image: "/assets/img/papers/2026-arxiv-cacherl.png"
+    selected: n
+
   - title: "Foundation-Preserving Adaptation via Generalized Rayleigh-Quotient Optimization"
     authors: "Dongjun Kim, Adrian de Wynter, <b>Huancheng Chen</b>, Heasung Kim, Haris Vikalo"
     venue: "arxiv"
