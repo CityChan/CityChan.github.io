@@ -23,7 +23,7 @@ papers:
   - title: "CoreQ: Learning-Free Mismatch Correction and Successive Rounding for Quantization"
     authors: "Seohyeon Cha, <b>Huancheng Chen</b>, Dongjun Kim, Haoran Zhang, Kevin Chan, Gustavo de Veciana, Haris Vikalo"
     venue_short: "NeurIPS'26"
-    venue: "Conference on Neural Information Processing Systems (Spotlight, 0.91% acceptance rate)"
+    venue: 'Conference on Neural Information Processing Systems (<span class="venue-badge">Spotlight, 0.91% acceptance rate</span>)'
     paper_pdf: "https://arxiv.org/abs/2602.05902"
     image: "/assets/img/papers/2026-arxiv-calibration.png"
     selected: y
