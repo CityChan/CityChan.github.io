@@ -25,6 +25,7 @@ papers:
     venue_short: "NeurIPS'26"
     venue: 'Conference on Neural Information Processing Systems (<span class="venue-badge">Spotlight, 0.91% acceptance rate</span>)'
     paper_pdf: "https://arxiv.org/abs/2602.05902"
+    code: "https://github.com/seohyeon-cha/CoreQ"
     image: "/assets/img/papers/2026-arxiv-calibration.png"
     selected: y
 
