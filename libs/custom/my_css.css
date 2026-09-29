@@ -74,14 +74,16 @@ img { max-width: 100%; }
 .hero { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.6fr); grid-template-areas: "portrait copy"; align-items: center; gap: 60px; padding: 80px 0 54px; }
 .hero-copy { grid-area: copy; }
 .hero h1 { font-size: clamp(36px,4.4vw,54px); margin-bottom: 20px; }
-.hero-role { font-size: 20px; line-height: 1.6; color: var(--muted); margin-bottom: 6px; }
+.hero-role { font-size: 20px; line-height: 1.6; color: var(--muted); margin-bottom: 20px; }
 .hero-location { font-size: 14px; color: var(--subtle); margin-bottom: 24px; }
 .hero-location i { margin-right: 5px; }
 .hero-email { color: var(--subtle); font-size: 12px; margin: 12px 0 0; }
-.social-icons { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
-.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; color: var(--muted); font-size: 22px; border-radius: 10px; transition: background .2s, color .2s; }
-.social-icons a:hover { background: var(--surface); color: var(--accent); text-decoration: none; }
-.social-icons .cv-link { width: auto; gap: 7px; padding: 0 11px; margin-left: 8px; border: 1px solid var(--line); background: var(--panel); font-size: 12px; font-weight: 600; }
+.social-icons { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--muted); border: 1px solid transparent; border-radius: 50%; transition: background .2s, color .2s, border-color .2s; }
+.social-icons a:hover { background: var(--surface); color: var(--accent); border-color: var(--line); text-decoration: none; }
+.social-icons svg { display: block; width: 24px; height: 24px; flex-shrink: 0; }
+.social-icons .cv-link svg { width: 16px; height: 16px; }
+.social-icons .cv-link { width: auto; gap: 7px; padding: 0 11px; margin-left: 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); font-size: 12px; font-weight: 600; }
 .portrait-frame { grid-area: portrait; justify-self: start; width: 100%; max-width: 310px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(93,82,75,.06); }
 .portrait-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 28%; transition: transform .4s ease; }
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
@@ -208,7 +210,8 @@ img { max-width: 100%; }
   .hero-role { font-size: 16px; }
   .hero-location { font-size: 12px; }
   .social-icons { gap: 3px; }
-  .social-icons a { width: 35px; height: 38px; font-size: 20px; }
+  .social-icons a { width: 35px; height: 38px; }
+  .social-icons svg { width: 22px; height: 22px; }
   .social-icons .cv-link { margin-left: 0; }
   .hero-email { font-size: 11px; }
   .bio-panel { padding: 25px; }
