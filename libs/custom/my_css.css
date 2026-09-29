@@ -92,7 +92,7 @@ img { max-width: 100%; }
   .portrait-frame:hover img { transform: scale(1.04); }
 }
 .bio-panel { padding: 30px 34px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); scroll-margin-top: 100px; }
-.bio-panel p { font-size: 18px; line-height: 1.625; color: var(--muted); margin: 0; }
+.bio-panel p { font-size: 16px; line-height: 1.625; color: var(--muted); margin: 0; }
 .bio-panel p + p { margin-top: 18px; }
 .university-link { white-space: nowrap; }
 .longhorn-icon { display: inline-block; width: 28px; height: auto; margin-left: 2px; vertical-align: -.05em; }
