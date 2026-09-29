@@ -110,11 +110,11 @@ title: Home
     <a class="text-link" href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">&nearr;</span></a>
   </div>
   <div class="publication-toolbar">
-    <p class="publication-note"><sup>‡</sup> Equal contribution</p>
     <div class="paper-filters" role="group" aria-label="Filter publications" data-js-control hidden>
       <button type="button" data-paper-filter="published" aria-pressed="true" aria-controls="publication-list">Published</button>
       <button type="button" data-paper-filter="preprint" aria-pressed="false" aria-controls="publication-list">Preprints</button>
     </div>
+    <p class="publication-note"><sup>‡</sup> Equal contribution</p>
   </div>
   <div id="publication-list">
     {% assign paper_years = site.data.publications.papers | group_by: 'year' | sort: 'name' | reverse %}
