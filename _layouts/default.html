@@ -76,7 +76,7 @@
         <img src="{{ site.data.main_info.profile_pic | relative_url }}" alt="{{ site.data.main_info.name }}" width="320" height="350" fetchpriority="high">
       </div>
     </section>
-    {% else %}
+    {% elsif page.title != 'Beyond Work' %}
     <div class="page-heading"><p class="eyebrow">{{ site.data.main_info.name }}</p><h1>{{ page.title }}</h1></div>
     {% endif %}
     {{ content }}
@@ -86,7 +86,6 @@
     <div class="container footer-inner">
       <span>&copy; {{ site.time | date: '%Y' }} {{ site.data.main_info.name }}</span>
       <span>Last updated {{ site.time | date: '%B %Y' }}</span>
-      <a href="mailto:huanchengch@gmail.com">Get in touch <span aria-hidden="true">&nearr;</span></a>
     </div>
   </footer>
   {% include google_analytics.html %}

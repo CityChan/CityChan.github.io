@@ -114,7 +114,6 @@ title: Home
       <button type="button" data-paper-filter="published" aria-pressed="true" aria-controls="publication-list">Published</button>
       <button type="button" data-paper-filter="preprint" aria-pressed="false" aria-controls="publication-list">Preprints</button>
     </div>
-    <p class="publication-note"><sup>‡</sup> Equal contribution</p>
   </div>
   <div id="publication-list">
     {% assign paper_years = site.data.publications.papers | group_by: 'year' | sort: 'name' | reverse %}
@@ -165,6 +164,7 @@ title: Home
     <li>International Joint Conference on Artificial Intelligence (<strong>IJCAI</strong>), since 2024</li>
     <li>AAAI Conference on Artificial Intelligence (<strong>AAAI</strong>), since 2025</li>
     <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), since 2025</li>
+    <li>ACL Rolling Review, May 2026</li>
   </ul>
   <h3 class="service-heading">Journal Reviewer</h3>
   <ul class="service-list">
