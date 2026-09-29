@@ -3,161 +3,139 @@ layout: default
 title: Home
 ---
 <!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4>Bio</h4>
+<div class="bio-panel" id="bio">
+  <h2>About</h2>
   <p>
-    I am currently an Applied Scientist II at Microsoft AI. I obtained my PhD in Electrical and Computer Engineering in June 2025 from UT Austin, advised by Prof. <a href="https://users.ece.utexas.edu/~hvikalo/" target="_blank">Haris Vikalo</a>. I was also a member of the <a href="https://wncg.org/" target="_blank">WNCG lab</a> (<b>W</b>ireless <b>N</b>etworking and <b>C</b>ommunications <b>G</b>roup). Before joining UT Austin, I obtained my B.Eng degree from the department of Electrical Engineering and Automation,  <a href="https://www.scut.edu.cn/en/" target="_blank">South China University of Technology</a>.
+    I am currently an Applied Scientist II at Microsoft AI. I obtained my PhD in Electrical and Computer Engineering in June 2025 from UT Austin, advised by Prof. <a href="https://users.ece.utexas.edu/~hvikalo/" target="_blank" rel="noopener noreferrer">Haris Vikalo</a>. I was also a member of the <a href="https://wncg.org/" target="_blank" rel="noopener noreferrer">WNCG lab</a> (<b>W</b>ireless <b>N</b>etworking and <b>C</b>ommunications <b>G</b>roup). Before joining UT Austin, I obtained my B.Eng degree from the department of Electrical Engineering and Automation,  <a href="https://www.scut.edu.cn/en/" target="_blank" rel="noopener noreferrer">South China University of Technology</a>.
   </p>
 	
 </div>
 
-<div class="docs-section" id="research">  
-  <h4>Research Interests</h4>
-   <p>
-  My research interests lie in <span class="keyword">LLM post-training</span> and <span class="keyword">efficient LLM</span>, with a focus on making large language models more capable, reliable, and deployable. Specifically, I am interested in: <br>
-<b>1)</b> <span class="keyword">LLM post-training</span>: SFT, reinforcement learning, and training efficiency. <br>
-<b>2)</b> <span class="keyword">Efficient LLM</span>: inference acceleration via quantization, pruning, and distillation. <br>
-<b>3)</b> <span class="keyword">Continual learning</span>: fine-tuning pretrained LLM and VLM on downstream tasks. <br>
-<b>4)</b> <span class="keyword">Trustworthy AI</span>: privacy-preserving machine learning and model safety. <br>
-  <p>Research statement can be found in <a href={{ "/assets/cv/research.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
- </p>
-</div>
-
-<div class="docs-section" id="news">
-  <h4>News</h4>
-  <div class="news-scroll">
-  <p>
-    <b> September, 2026 </b> One paper about post-training quantization accepted as a <span class="venue-badge">NeurIPS2026 Spotlight</span> (top 1%). <br>
-    <b> June, 2026 </b> One paper about multi-turn tool-calling agents in arXiv. <br>
-    <b> June, 2026 </b> One paper about continual learning accepted in <span class="venue-badge">TMLR</span>. <br>
-    <b> May, 2026 </b> One paper about foundation-preserving adaptation in arXiv. <br>
-    <b> March, 2026 </b> I joined Microsoft AI as Applied Scientist II. <br>
-    <b> March, 2026 </b> Two papers accepted in <span class="venue-badge">CVPR2026</span> workshops. <br>
-    <b> March, 2026 </b> One paper about long-horizon LLM agents in arXiv. <br>
-    <b> February, 2026 </b> One paper about LLM quantization in arXiv. <br>
-    <b> January, 2026 </b> One paper was accepted in <span class="venue-badge">ICLR2026</span>. <br>
-    <b> September, 2025 </b> One paper about continual learning in arXiv. <br>
-    <b> June, 2025 </b>   I joined Accenture as Senior AI Research Scientist. <br>
-    <b> June, 2025 </b>   Passed my PhD Defense!. <br>
-    <b> November, 2024 </b>   One paper about layout-to-image based on diffusion models in arXiv. <br>
-    <b> September, 2024 </b>  One paper about continual learning on foundation models in arXiv. <br>
-    <b> November, 2024 </b>   Pass my Ph.D progress review. <br>
-    <b> September, 2024 </b>   One paper accepted in <span class="venue-badge">NeurIPS2024</span>. <br>
-    <b> May, 2024 </b>   One paper accepted in <span class="venue-badge">ICML2024</span>. <br>
-    <b> February, 2024 </b>   One paper accepted in <span class="venue-badge">CVPR2024</span>. <br>
-    <b> February, 2024 </b>   Joining PPML team in <a href="https://ai.sony/" target="_blank">SonyAI</a> as research intern. <br>
-    <b> November, 2023 </b>   One paper about mixed-precision quantization preprinted in arXiv. <br>
-    <b> September, 2023 </b>   One paper about client selection preprinted in arXiv. <br>
-    <b> March, 2023 </b>   One paper accepted in <span class="venue-badge">CVPR2023</span> workshop. <br>
-    <b> Jan, 2023 </b>     One paper accepted in <span class="venue-badge">ICLR2023</span>.
-  </p>
+<section class="docs-section" id="research" aria-labelledby="research-title">
+  <div class="section-heading">
+    <h2 id="research-title">Research interests</h2>
+    <a class="text-link" href="{{ '/assets/cv/research.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Research statement <span aria-hidden="true">&nearr;</span></a>
   </div>
-</div>
+  <p class="section-intro">My research interests lie in <span class="keyword">LLM post-training</span> and <span class="keyword">efficient LLM</span>, with a focus on making large language models more capable, reliable, and deployable.</p>
+  <div class="research-grid">
+    <article class="research-card"><span class="card-number" aria-hidden="true">01</span><h3>LLM post-training</h3><p>SFT, reinforcement learning, and training efficiency.</p></article>
+    <article class="research-card"><span class="card-number" aria-hidden="true">02</span><h3>Efficient LLM</h3><p>Inference acceleration via quantization, pruning, and distillation.</p></article>
+    <article class="research-card"><span class="card-number" aria-hidden="true">03</span><h3>Continual learning</h3><p>Fine-tuning pretrained LLM and VLM on downstream tasks.</p></article>
+    <article class="research-card"><span class="card-number" aria-hidden="true">04</span><h3>Trustworthy AI</h3><p>Privacy-preserving machine learning and model safety.</p></article>
+  </div>
+</section>
 
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
-  </p>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-published">Published</div></li>
-    <li><div class="button" data-ref="#papers-preprint">Preprint</div></li>
+<section class="docs-section" id="news" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <ul class="news-list">
+    <li><span class="news-date">September, 2026</span><div>One paper about post-training quantization accepted as a <span class="venue-badge">NeurIPS2026 Spotlight</span> (top 1%).</div></li>
+    <li><span class="news-date">June, 2026</span><div>One paper about multi-turn tool-calling agents in arXiv.</div></li>
+    <li><span class="news-date">June, 2026</span><div>One paper about continual learning accepted in <span class="venue-badge">TMLR</span>.</div></li>
+    <li><span class="news-date">May, 2026</span><div>One paper about foundation-preserving adaptation in arXiv.</div></li>
   </ul>
+  <details class="news-archive"><summary>Earlier updates <span aria-hidden="true">+</span></summary>
+    <ul class="news-list">
+    <li><span class="news-date">March, 2026</span><div>I joined Microsoft AI as Applied Scientist II.</div></li>
+    <li><span class="news-date">March, 2026</span><div>Two papers accepted in <span class="venue-badge">CVPR2026</span> workshops.</div></li>
+    <li><span class="news-date">March, 2026</span><div>One paper about long-horizon LLM agents in arXiv.</div></li>
+    <li><span class="news-date">February, 2026</span><div>One paper about LLM quantization in arXiv.</div></li>
+    <li><span class="news-date">January, 2026</span><div>One paper was accepted in <span class="venue-badge">ICLR2026</span>.</div></li>
+    <li><span class="news-date">September, 2025</span><div>One paper about continual learning in arXiv.</div></li>
+    <li><span class="news-date">June, 2025</span><div>I joined Accenture as Senior AI Research Scientist.</div></li>
+    <li><span class="news-date">June, 2025</span><div>Passed my PhD Defense!.</div></li>
+    <li><span class="news-date">November, 2024</span><div>One paper about layout-to-image based on diffusion models in arXiv.</div></li>
+    <li><span class="news-date">September, 2024</span><div>One paper about continual learning on foundation models in arXiv.</div></li>
+    <li><span class="news-date">November, 2024</span><div>Pass my Ph.D progress review.</div></li>
+    <li><span class="news-date">September, 2024</span><div>One paper accepted in <span class="venue-badge">NeurIPS2024</span>.</div></li>
+    <li><span class="news-date">May, 2024</span><div>One paper accepted in <span class="venue-badge">ICML2024</span>.</div></li>
+    <li><span class="news-date">February, 2024</span><div>One paper accepted in <span class="venue-badge">CVPR2024</span>.</div></li>
+    <li><span class="news-date">February, 2024</span><div>Joining PPML team in <a href="https://ai.sony/" target="_blank" rel="noopener noreferrer">SonyAI</a> as research intern.</div></li>
+    <li><span class="news-date">November, 2023</span><div>One paper about mixed-precision quantization preprinted in arXiv.</div></li>
+    <li><span class="news-date">September, 2023</span><div>One paper about client selection preprinted in arXiv.</div></li>
+    <li><span class="news-date">March, 2023</span><div>One paper accepted in <span class="venue-badge">CVPR2023</span> workshop.</div></li>
+    <li><span class="news-date">Jan, 2023</span><div>One paper accepted in <span class="venue-badge">ICLR2023</span>.</div></li>
+    </ul>
+  </details>
+</section>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-published">
-      {% assign published_papers = site.data.publications.papers | where_exp: "paper", "paper.venue != 'arxiv'" %}
-      {% for paper in published_papers %}
-        <div class="paper">
-          <div class="paper-row">
-            <div class="paper-thumb">
-              <a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener noreferrer">
-                {% if paper.image %}<img src="{{ paper.image | prepend: site.baseurl }}" alt="{{ paper.title }}" loading="lazy" onerror="this.style.display='none'">{% endif %}
-              </a>
-            </div>
-            <div class="paper-info">
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p>{% if paper.venue_short %}<span class="venue-badge">{{ paper.venue_short }}</span> {% endif %}<i class="venue-full">{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}<a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>{% endif %}
-                {% if paper.slides %}<a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>{% endif %}
-                {% if paper.poster %}<a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>{% endif %}
-                {% if paper.video %}<a class="button" href="{{ paper.video }}" target="_blank">Video</a>{% endif %}
-                {% if paper.code %}<a class="button" href="{{ paper.code }}" target="_blank">Code</a>{% endif %}
-                {% if paper.data %}<a class="button" href="{{ paper.data }}" target="_blank">Data</a>{% endif %}
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-preprint">
-      {% assign preprint_papers = site.data.publications.papers | where: "venue", "arxiv" %}
-      {% for paper in preprint_papers %}
-        <div class="paper">
-          <div class="paper-row">
-            <div class="paper-thumb">
-              <a href="{{ paper.paper_pdf }}" target="_blank" rel="noopener noreferrer">
-                {% if paper.image %}<img src="{{ paper.image | prepend: site.baseurl }}" alt="{{ paper.title }}" loading="lazy" onerror="this.style.display='none'">{% endif %}
-              </a>
-            </div>
-            <div class="paper-info">
-              <p class="title"><b>{{ paper.title }}</b></p>
-              <p>{{ paper.authors }}</p>
-              <p>{% if paper.venue_short %}<span class="venue-badge">{{ paper.venue_short }}</span> {% endif %}<i class="venue-full">{{ paper.venue }}</i></p>
-              <div class="paper-buttons">
-                {% if paper.paper_pdf %}<a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>{% endif %}
-                {% if paper.slides %}<a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>{% endif %}
-                {% if paper.poster %}<a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>{% endif %}
-                {% if paper.video %}<a class="button" href="{{ paper.video }}" target="_blank">Video</a>{% endif %}
-                {% if paper.code %}<a class="button" href="{{ paper.code }}" target="_blank">Code</a>{% endif %}
-                {% if paper.data %}<a class="button" href="{{ paper.data }}" target="_blank">Data</a>{% endif %}
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+<section class="docs-section" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading">
+    <h2 id="publications-title">Publications</h2>
+    <a class="text-link" href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">&nearr;</span></a>
   </div>
-</div>
-
-
-
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Vitæ</h4>
-
-  <p>Full Resume in <a href={{ "/assets/cv/cv.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
-
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% assign mod = forloop.index0 | modulo: 2 %}
-      {% if mod == 0 %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag{% if forloop.first %} flag-current{% endif %}">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+  <div class="publication-toolbar">
+    <div class="paper-filters" role="group" aria-label="Filter publications" data-js-control hidden>
+      <button type="button" data-paper-filter="all" aria-pressed="true" aria-controls="publication-list">All</button>
+      <button type="button" data-paper-filter="published" aria-pressed="false" aria-controls="publication-list">Published</button>
+      <button type="button" data-paper-filter="preprint" aria-pressed="false" aria-controls="publication-list">Preprints</button>
+    </div>
+    <p class="publication-note"><span id="publication-count" role="status" aria-live="polite">{{ site.data.publications.papers | size }} papers</span><span aria-hidden="true"> &middot; </span><sup>‡</sup> Equal contribution</p>
+  </div>
+  <div id="publication-list">
+    {% assign paper_years = site.data.publications.papers | group_by: 'year' | sort: 'name' | reverse %}
+    {% for year in paper_years %}
+    <section class="publication-year" aria-labelledby="year-{{ year.name }}">
+      <h3 class="year-heading" id="year-{{ year.name }}">{{ year.name }}</h3>
+      {% for paper in year.items %}
+      <article class="paper" data-paper-status="{% if paper.venue == 'arxiv' %}preprint{% else %}published{% endif %}">
+        <h4 class="paper-title">{{ paper.title }}</h4>
+        <p class="paper-authors">{{ paper.authors }}</p>
+        <p class="paper-venue">{% if paper.venue_short %}<span class="venue-badge">{{ paper.venue_short }}</span> <span class="venue-full">{{ paper.venue }}</span>{% else %}<span class="preprint-badge">Preprint</span> <span class="venue-full">arXiv</span>{% endif %}</p>
+        <div class="paper-buttons">
+          {% if paper.paper_pdf %}<a class="button" href="{% if paper.paper_pdf contains '://' %}{{ paper.paper_pdf }}{% else %}{{ paper.paper_pdf | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-text-o" aria-hidden="true"></i> Paper</a>{% endif %}
+          {% if paper.slides %}<a class="button" href="{% if paper.slides contains '://' %}{{ paper.slides }}{% else %}{{ paper.slides | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">Slides</a>{% endif %}
+          {% if paper.poster %}<a class="button" href="{% if paper.poster contains '://' %}{{ paper.poster }}{% else %}{{ paper.poster | relative_url }}{% endif %}" target="_blank" rel="noopener noreferrer">Poster</a>{% endif %}
+          {% if paper.video %}<a class="button" href="{{ paper.video }}" target="_blank" rel="noopener noreferrer">Video</a>{% endif %}
+          {% if paper.code %}<a class="button" href="{{ paper.code }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-code" aria-hidden="true"></i> Code</a>{% endif %}
+          {% if paper.data %}<a class="button" href="{{ paper.data }}" target="_blank" rel="noopener noreferrer">Data</a>{% endif %}
         </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
+      </article>
+      {% endfor %}
+    </section>
     {% endfor %}
-  </ul>
-</div>
+  </div>
+</section>
 
+<section class="docs-section" id="resume" aria-labelledby="experience-title">
+  <div class="section-heading">
+    <h2 id="experience-title">Experience &amp; education</h2>
+    <a class="text-link" href="{{ '/assets/cv/cv.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Full CV <span aria-hidden="true">&nearr;</span></a>
+  </div>
+  <div class="experience-grid">
+    <div>
+      <h3 class="timeline-heading"><span class="timeline-dot" aria-hidden="true"></span> Professional experience</h3>
+      <ol class="experience-list">
+        {% assign work = site.data.experience.experiences | where: 'category', 'work' %}
+        {% for exp in work %}
+        <li{% if forloop.first %} class="current-position"{% endif %}>
+          <p class="experience-date">{{ exp.time }}</p>
+          <h4>{{ exp.title }}</h4>
+          <p class="experience-place">{{ exp.place }}</p>
+          <p class="experience-detail">{{ exp.subtitle }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="education-column">
+      <h3 class="timeline-heading"><span class="timeline-dot" aria-hidden="true"></span> Education</h3>
+      <ol class="experience-list">
+        {% assign education = site.data.experience.experiences | where: 'category', 'school' %}
+        {% for exp in education %}
+        <li>
+          <p class="experience-date">{{ exp.time }}</p>
+          <h4>{{ exp.title }}</h4>
+          <p class="experience-place">{{ exp.place }}</p>
+          <p class="experience-detail">{{ exp.subtitle }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
 
+<div class="additional-grid">
 <div class="docs-section" id="teaching">
-  <h4>Teaching</h4>
+  <h2>Teaching</h2>
   <p>
     TA for CS395T, 2020 Fall: Foundation of Predictive Machine Learning <br>
     TA for EE381K, 2021 Spring: Statistical Machine Learning <br>
@@ -170,7 +148,7 @@ title: Home
 </div>
 
 <div class="docs-section" id="service">
-  <h4>Service</h4>
+  <h2>Service</h2>
   <p>
     conference reviewer: ICML(22,23,24,25,26), NeurIPS(22,23,24,25), ICLR(24,25), IJCAI(24,25), AAAI(25), CVPR(25). <br>
     journal reviewer: IEEE TMC
@@ -179,7 +157,7 @@ title: Home
 </div>
 
 <div class="docs-section" id="skill">
-  <h4>Skills</h4>
+  <h2>Skills</h2>
   <p>
     <b>Programming Languages</b>: Python, Java, C/C++, SQL, LaTeX <br>
     <b>Softwares</b>: Pytorch, Tensorflow, Transformers, Linux, AWS, Google Cloud, Matlab, Git, Docker
@@ -188,8 +166,10 @@ title: Home
 </div>
 
 
-<div class="docs-section" id="template">
-    <h4>Acknowledgement</h4>
-    This website was built based on a template by <a href="https://web.stanford.edu/~msaveski/" target="_blank">Martin Saveski</a>.
-    Thanks for the author's contribution.
+</div>
+
+<div class="acknowledgement" id="template">
+    <h2>Acknowledgement</h2>
+    This website was built based on a template by <a href="https://web.stanford.edu/~msaveski/" target="_blank" rel="noopener noreferrer">Martin Saveski</a>.
+    Visual design inspired by <a href="https://www.yujia.io/" target="_blank" rel="noopener noreferrer">Yujia Bao</a>.
 </div>

@@ -1,36 +1,26 @@
-# Martin Saveski's Website
+# Huancheng Chen's website
 
-## Updates guide
-Change one of the files in `_data`, unless you are changing the look of the website.
+Personal academic homepage built with Jekyll and hosted on GitHub Pages.
 
-Test changes with:
-```
-jekyll serve
-```
+## Updating content
 
-Push to the ML web directory:
-```
-rm -rf public_html
-mkdir public_html
-```
-```
-./__deploy.sh
-```
+- `_data/main_info.yaml`: name, role, location, portrait, and social links.
+- `_data/publications.yaml`: papers and resource links. Set `year` to the publication year (or preprint year for arXiv-only papers); the homepage groups papers by this value. Keep `venue: "arxiv"` for preprints so the publication filters work.
+- `_data/experience.yaml`: work and education. Use `category: "work"` or `category: "school"`.
+- `index.html`: biography, research interests, news, teaching, service, and skills.
+- `beyond.html`: personal interests and album collection.
+- `assets/cv/`: CV and research statement PDFs.
 
-More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
+## Layout and appearance
 
-**Stanford links**
-- Use fetch!
-- [Basic WWW for Individual Users](https://uit.stanford.edu/service/web/centralhosting/howto_user)
-- [AFS File Transfer](https://uit.stanford.edu/service/afs/file-transfer/macintosh)
+The shared layout is in `_layouts/default.html`, styles in `libs/custom/my_css.css`, and navigation, theme, and publication filters in `libs/custom/my_js.js`.
 
+The site starts in light mode and remembers an explicitly selected theme. Papers and news remain available without JavaScript. Existing section anchors, including `#bio`, `#research`, `#publications`, and `#resume`, remain supported.
 
-## External Libraries
-- Framework: [Jekyll](http://jekyllrb.com/)
-- CSS
-  - [Skeleton](getskeleton.com)
-  - Tabs: [Skeleton Tabs](https://github.com/nathancahill/skeleton-tabs)
-  - Experience: [Timeline](https://codepen.io/NilsWe/pen/FemfK)
-  - Icons: [Font Awesome](http://fontawesome.io/)
-- JS
-  - [Jquery (3.1.1)](https://jquery.com/)
+With Jekyll installed, run `jekyll serve` to preview locally. GitHub Pages builds and publishes the site from the root of `master`. Check the Pages deployment after pushing.
+
+## Credits
+
+The original site was based on [Martin Saveski's template](https://web.stanford.edu/~msaveski/).
+
+Existing libraries include Skeleton, Normalize.css, Font Awesome, Academicons, and jQuery.

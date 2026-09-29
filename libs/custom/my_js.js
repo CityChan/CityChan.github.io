@@ -1,111 +1,81 @@
-$(document).ready(function() {
-
-  // Variables
-  var $codeSnippets = $('.code-example-body'),
-      $nav = $('.navbar'),
-      $body = $('body'),
-      $window = $(window),
-      $popoverLink = $('[data-popover]'),
-      navOffsetTop = $nav.offset().top,
-      $document = $(document),
-      entityMap = {
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': '&quot;',
-        "'": '&#39;',
-        "/": '&#x2F;'
-      }
-
-  function init() {
-    $window.on('scroll', onScroll)
-    $window.on('resize', resize)
-    $popoverLink.on('click', openPopover)
-    $document.on('click', closePopover)
-    $('a[href^="#"]').on('click', smoothScroll)
-    buildSnippets();
-    initDarkMode();
+document.addEventListener('DOMContentLoaded', function () {
+  var themeToggle = document.getElementById('darkToggle');
+  var themeIcon = document.getElementById('darkToggleIcon');
+  function syncTheme() {
+    var dark = document.documentElement.classList.contains('dark-mode');
+    themeToggle.setAttribute('aria-pressed', String(dark));
+    themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    themeIcon.className = 'fa ' + (dark ? 'fa-sun-o' : 'fa-moon-o');
   }
+  syncTheme();
+  themeToggle.addEventListener('click', function () {
+    var dark = document.documentElement.classList.toggle('dark-mode');
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+    syncTheme();
+  });
 
-  function initDarkMode() {
-    var $toggle = $('#darkToggle');
-    var $icon = $('#darkToggleIcon');
-
-    // Sync icon with the class set by the anti-FOUC script
-    if ($('html').hasClass('dark-mode')) {
-      $icon.removeClass('fa-moon-o').addClass('fa-sun-o');
+  var menuToggle = document.getElementById('menuToggle');
+  var menu = document.getElementById('nav-links');
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation');
+  }
+  menuToggle.addEventListener('click', function () {
+    var open = menu.classList.toggle('is-open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  });
+  menu.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && menu.classList.contains('is-open')) {
+      closeMenu();
+      menuToggle.focus();
     }
+  });
+  document.addEventListener('click', function (event) {
+    if (!event.target.closest('.site-header')) closeMenu();
+  });
 
-    $toggle.on('click', function() {
-      var isDark = $('html').toggleClass('dark-mode').hasClass('dark-mode');
-      $icon.toggleClass('fa-moon-o', !isDark).toggleClass('fa-sun-o', isDark);
-      try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch(e) {}
+  var filters = document.querySelectorAll('[data-paper-filter]');
+  var papers = document.querySelectorAll('[data-paper-status]');
+  var groups = document.querySelectorAll('.publication-year');
+  var count = document.getElementById('publication-count');
+  filters.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var filter = button.dataset.paperFilter;
+      var visible = 0;
+      filters.forEach(function (other) { other.setAttribute('aria-pressed', String(other === button)); });
+      papers.forEach(function (paper) {
+        paper.hidden = filter !== 'all' && paper.dataset.paperStatus !== filter;
+        if (!paper.hidden) visible++;
+      });
+      groups.forEach(function (group) { group.hidden = !group.querySelector('[data-paper-status]:not([hidden])'); });
+      count.textContent = visible + ' papers';
     });
-  }
+  });
+  // All papers remain readable without JavaScript.
+  document.querySelectorAll('[data-js-control]').forEach(function (control) { control.hidden = false; });
 
-  function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    var target = this.hash,
-        menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-40
-    }, 0, 'swing', function () {
-        window.location.hash = target;
-        $(document).on("scroll", onScroll);
+  if ('IntersectionObserver' in window) {
+    var sectionLinks = Array.from(menu.querySelectorAll('a')).filter(function (link) {
+      return link.pathname.replace(/index\.html$/, '') === window.location.pathname.replace(/index\.html$/, '') && link.hash;
     });
-  }
-
-  function openPopover(e) {
-    e.preventDefault()
-    closePopover();
-    var popover = $($(this).data('popover'));
-    popover.toggleClass('open')
-    e.stopImmediatePropagation();
-  }
-
-  function closePopover(e) {
-    if($('.popover.open').length > 0) {
-      $('.popover').removeClass('open')
-    }
-  }
-
-  $("#button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
-    }, 2000);
-});
-
-  function resize() {
-    $body.removeClass('has-docked-nav')
-    navOffsetTop = $nav.offset().top
-    onScroll()
-  }
-
-  function onScroll() {
-    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-      $body.addClass('has-docked-nav')
-    }
-    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
-      $body.removeClass('has-docked-nav')
-    }
-  }
-
-  function escapeHtml(string) {
-    return String(string).replace(/[&<>"'\/]/g, function (s) {
-      return entityMap[s];
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var activeHash = entry.target.classList.contains('hero') ? '#bio' : '#' + entry.target.id;
+        sectionLinks.forEach(function (link) {
+          if (link.hash === activeHash) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      });
+    }, { rootMargin: '-15% 0px -60% 0px', threshold: 0 });
+    sectionLinks.forEach(function (link) {
+      var target = document.querySelector(link.hash);
+      if (target) observer.observe(target);
     });
+    var hero = document.querySelector('.hero');
+    if (hero) observer.observe(hero);
   }
-
-  function buildSnippets() {
-    $codeSnippets.each(function() {
-      var newContent = escapeHtml($(this).html())
-      $(this).html(newContent)
-    })
-  }
-
-
-  init();
-
 });

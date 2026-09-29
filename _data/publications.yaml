@@ -1,5 +1,6 @@
 papers:
   - title: "CacheRL: Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward"
+    year: 2026
     authors: "Md Amirul Islam, Sumiran Thakur, <b>Huancheng Chen</b>, Su Min Park, Jiayun Wang, Gyuhak Kim"
     venue: "arxiv"
     paper_pdf: "https://arxiv.org/abs/2606.14179"
@@ -7,6 +8,7 @@ papers:
     selected: n
 
   - title: "Foundation-Preserving Adaptation via Generalized Rayleigh-Quotient Optimization"
+    year: 2026
     authors: "Dongjun Kim, Adrian de Wynter, <b>Huancheng Chen</b>, Heasung Kim, Haris Vikalo"
     venue: "arxiv"
     paper_pdf: "https://arxiv.org/abs/2606.00132"
@@ -14,6 +16,7 @@ papers:
     selected: n
 
   - title: "Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory"
+    year: 2026
     authors: "Zhenting Wang, <b>Huancheng Chen</b>, Jiayun Wang, Wei Wei"
     venue: "arxiv"
     paper_pdf: "https://arxiv.org/abs/2603.04257"
@@ -21,6 +24,7 @@ papers:
     selected: n
 
   - title: "CoreQ: Learning-Free Mismatch Correction and Successive Rounding for Quantization"
+    year: 2026
     authors: "Seohyeon Cha, <b>Huancheng Chen</b>, Dongjun Kim, Haoran Zhang, Kevin Chan, Gustavo de Veciana, Haris Vikalo"
     venue_short: "NeurIPS'26"
     venue: 'Conference on Neural Information Processing Systems (<span class="venue-badge">Spotlight, 0.91% acceptance rate</span>)'
@@ -30,6 +34,7 @@ papers:
     selected: y
 
   - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
+    year: 2026
     authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
     venue_short: "ICLR'26"
     venue: "International Conference on Learning Representation (poster)"
@@ -39,6 +44,7 @@ papers:
     selected: y
 
   - title: "Task-Agnostic Federated Continual Learning via Replay-Free Gradient Projection"
+    year: 2026
     authors: "Seohyeon Cha <sup>‡</sup>, <b>Huancheng Chen <sup>‡</sup></b>, Haris Vikalo"
     venue_short: "TMLR'26"
     venue: "Transactions on Machine Learning Research"
@@ -47,6 +53,7 @@ papers:
     selected: y
 
   - title: "Training-Free Layout-to-Image Generation with Marginal Attention Constraints"
+    year: 2026
     venue_short: "CVPR'26"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Haris Vikalo, Lingjuan Lyu"
     venue: "Efficient and On-Device Generation Workshop"
@@ -56,6 +63,7 @@ papers:
     selected: y
 
   - title: "Replay-Free Continual Low-Rank Adaptation with Dynamic Memory"
+    year: 2026
     venue_short: "CVPR'26"
     authors: "<b>Huancheng Chen</b>, Jingtao Li, Weiming Zhuang, Chen Chen, Lingjuan Lyu"
     venue: "Domain Generalization Workshop"
@@ -65,6 +73,7 @@ papers:
     selected: y
 
   - title: "Heterogeneity-Guided Client Sampling: Towards Fast and Efficient Non-IID Federated Learning"
+    year: 2024
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue_short: "NeurIPS'24"
     venue: "Conference on Neural Information Processing Systems (poster)"
@@ -75,6 +84,7 @@ papers:
     selected: y
 
   - title: "Recovering Labels from Local Updates in Federated Learning"
+    year: 2024
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue_short: "ICML'24"
     venue: "International Conference on Machine Learning (poster)"
@@ -85,6 +95,7 @@ papers:
     selected: y
 
   - title: "Mixed-Precision Quantization for Federated Learning on Resource-Constrained Heterogeneous Devices"
+    year: 2024
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue_short: "CVPR'24"
     venue: "Conference on Computer Vision and Pattern Recognition (poster)"
@@ -96,6 +107,7 @@ papers:
     selected: y
 
   - title: "Federated Learning in Non-IID Settings Aided by Differentially Private Synthetic Data"
+    year: 2023
     authors: "<b>Huancheng Chen</b>, Haris Vikalo"
     venue_short: "CVPR'23"
     venue: "Conference on Computer Vision and Pattern Recognition FedVision Workshop (oral)"
@@ -106,6 +118,7 @@ papers:
     selected: y
 
   - title: "The Best of Both Worlds Accurate Global and Personalized Models through Federated Learning with Data-Free Hyper-Knowledge Distillation"
+    year: 2023
     authors: "<b>Huancheng Chen</b>, Johnny Wang, Haris Vikalo"
     venue_short: "ICLR'23"
     venue: "International Conference on Learning Representation (poster)"
@@ -116,6 +129,7 @@ papers:
     selected: y
 
   - title: "Skeleton-Graph: Long-Term 3D Motion Prediction From 2D Observations Using Deep Spatio-Temporal Graph CNNs"
+    year: 2021
     authors: "Abduallah Mohamed <sup>‡</sup>, <b>Huancheng Chen<sup>‡</sup></b>, Zhangyang Wang, Christian Claudel"
     venue_short: "ICCV'21"
     venue: "International Conference on Computer Vision Workshop"
