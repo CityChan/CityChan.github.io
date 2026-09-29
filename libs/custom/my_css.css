@@ -84,7 +84,8 @@ img { max-width: 100%; }
 }
 .icon-button:hover { border-color: var(--line); color: var(--accent); background: var(--surface); }
 .menu-toggle { display: none; }
-.hero { display: grid; grid-template-columns: minmax(0,1.6fr) minmax(0,1fr); align-items: center; gap: 60px; padding: 80px 0 54px; }
+.hero { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.6fr); grid-template-areas: "portrait copy"; align-items: center; gap: 60px; padding: 80px 0 54px; }
+.hero-copy { grid-area: copy; }
 .hero h1 { font-size: clamp(36px,4.4vw,54px); font-weight: 600; letter-spacing: -.055em; margin-bottom: 20px; }
 .hero-role { font-size: 20px; line-height: 1.6; color: var(--muted); margin-bottom: 6px; }
 .hero-location { font-size: 14px; color: var(--subtle); margin-bottom: 24px; }
@@ -94,7 +95,7 @@ img { max-width: 100%; }
 .social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; color: var(--muted); font-size: 22px; border-radius: 10px; transition: background .2s, color .2s; }
 .social-icons a:hover { background: var(--surface); color: var(--accent); text-decoration: none; }
 .social-icons .cv-link { width: auto; gap: 7px; padding: 0 11px; margin-left: 8px; border: 1px solid var(--line); background: var(--panel); font-size: 12px; font-weight: 600; }
-.portrait-frame { justify-self: end; width: 100%; max-width: 310px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(29,45,73,.06); }
+.portrait-frame { grid-area: portrait; justify-self: start; width: 100%; max-width: 310px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(29,45,73,.06); }
 .portrait-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 28%; }
 .bio-panel { padding: 30px 34px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); scroll-margin-top: 100px; }
 .bio-panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--subtle); margin-bottom: 12px; }
@@ -213,7 +214,7 @@ img { max-width: 100%; }
   .nav-links { display: none; width: 100%; margin: 0; padding: 8px 0 20px; flex-direction: column; align-items: stretch; gap: 0; }
   .nav-links.is-open { display: flex; }
   .nav-links a { font-size: 14px; padding: 10px 0; }
-  .hero { padding-top: 48px; gap: 25px; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); }
+  .hero { padding-top: 48px; gap: 25px; grid-template-columns: minmax(0,1fr) minmax(0,1.5fr); }
   .hero h1 { font-size: 38px; }
   .hero-role { font-size: 16px; }
   .hero-location { font-size: 12px; }
@@ -229,7 +230,7 @@ img { max-width: 100%; }
 @media (max-width: 549px) {
   body { font-size: 14px; }
   h2 { font-size: 25px; }
-  .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; padding-bottom: 30px; }
+  .hero { grid-template-columns: 1fr; grid-template-areas: "copy" "portrait"; gap: 28px; padding-top: 40px; padding-bottom: 30px; }
   .hero h1 { font-size: 40px; margin-bottom: 14px; }
   .hero-role { font-size: 17px; }
   .hero-location { margin-bottom: 18px; }
