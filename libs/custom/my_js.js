@@ -25,20 +25,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var filters = document.querySelectorAll('[data-paper-filter]');
   var papers = document.querySelectorAll('[data-paper-status]');
   var groups = document.querySelectorAll('.publication-year');
-  var count = document.getElementById('publication-count');
   filters.forEach(function (button) {
     button.addEventListener('click', function () {
       var filter = button.dataset.paperFilter;
-      var visible = 0;
       filters.forEach(function (other) { other.setAttribute('aria-pressed', String(other === button)); });
       papers.forEach(function (paper) {
-        paper.hidden = filter !== 'all' && paper.dataset.paperStatus !== filter;
-        if (!paper.hidden) visible++;
+        paper.hidden = paper.dataset.paperStatus !== filter;
       });
       groups.forEach(function (group) { group.hidden = !group.querySelector('[data-paper-status]:not([hidden])'); });
-      count.textContent = visible + ' papers';
     });
   });
+  var defaultFilter = document.querySelector('[data-paper-filter="published"]');
+  if (defaultFilter) defaultFilter.click();
   // All papers remain readable without JavaScript.
   document.querySelectorAll('[data-js-control]').forEach(function (control) { control.hidden = false; });
 
