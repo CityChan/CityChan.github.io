@@ -25,7 +25,7 @@ title: Home
           <p class="experience-date">{{ exp.time }}</p>
           <h4>{{ exp.title }}</h4>
           <p class="experience-place">{{ exp.place }}</p>
-          <p class="experience-detail">{{ exp.subtitle }}</p>
+          {% if exp.subtitle != '' %}<p class="experience-detail">{{ exp.subtitle }}</p>{% endif %}
         </li>
         {% endfor %}
       </ol>
