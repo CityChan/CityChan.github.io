@@ -83,7 +83,10 @@ img { max-width: 100%; }
 .social-icons a:hover { background: var(--surface); color: var(--accent); text-decoration: none; }
 .social-icons .cv-link { width: auto; gap: 7px; padding: 0 11px; margin-left: 8px; border: 1px solid var(--line); background: var(--panel); font-size: 12px; font-weight: 600; }
 .portrait-frame { grid-area: portrait; justify-self: start; width: 100%; max-width: 310px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(93,82,75,.06); }
-.portrait-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 28%; }
+.portrait-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 28%; transition: transform .4s ease; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .portrait-frame:hover img { transform: scale(1.04); }
+}
 .bio-panel { padding: 30px 34px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); scroll-margin-top: 100px; }
 .bio-panel p { font-size: 18px; line-height: 1.85; color: var(--muted); margin: 0; }
 .docs-section { padding: 0; margin: 82px 0 0; scroll-margin-top: 100px; border: 0; }
