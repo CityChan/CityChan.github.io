@@ -1,5 +1,9 @@
 # Site icon
 
+`ut-longhorn.svg` is the Texas Longhorn silhouette, displayed beside the UT Austin
+website link. Source: https://commons.wikimedia.org/wiki/File:Texas_Longhorns_logo.svg
+(unmodified SVG; trademark of The University of Texas at Austin).
+
 `stormwind-banner.jpg` is the World of Warcraft Stormwind Banner item icon
 (`inv_bannerpvp_02`), retained as the reference for the site's favicon.
 

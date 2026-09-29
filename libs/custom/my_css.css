@@ -94,6 +94,8 @@ img { max-width: 100%; }
 .bio-panel { padding: 30px 34px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); scroll-margin-top: 100px; }
 .bio-panel p { font-size: 18px; line-height: 1.625; color: var(--muted); margin: 0; }
 .bio-panel p + p { margin-top: 18px; }
+.university-link { white-space: nowrap; }
+.longhorn-icon { display: inline-block; width: 28px; height: auto; margin-left: 2px; vertical-align: -.05em; }
 .docs-section { padding: 0; margin: 82px 0 0; scroll-margin-top: 100px; border: 0; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
 .section-heading h2 { margin: 0; }
