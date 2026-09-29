@@ -150,7 +150,7 @@ img { max-width: 100%; }
 .experience-list { list-style: none; padding: 0 0 0 6px; margin: 0; }
 .experience-list li { position: relative; padding: 0 0 28px 25px; margin: 0; border-left: 1px solid var(--line); }
 .experience-list li:last-child { padding-bottom: 0; }
-.experience-list li::before { content: ""; position: absolute; top: 8px; left: -5px; width: 9px; height: 9px; background: var(--bg); border: 2px solid var(--line); border-radius: 50%; }
+.experience-list li::before { content: ""; position: absolute; box-sizing: border-box; top: 8px; left: -5px; width: 9px; height: 9px; background: var(--bg); border: 2px solid var(--line); border-radius: 50%; }
 .experience-list .current-position::before { border-color: var(--accent); background: var(--accent); }
 .experience-date { color: var(--accent); font-size: 14px; font-weight: 600; margin: 0 0 6px; }
 .education-column .experience-date { color: var(--secondary-accent); }
@@ -260,8 +260,9 @@ img { max-width: 100%; }
   .album-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .game-grid { grid-template-columns: 1fr; }
 }
-:root a:any-link { color: var(--link); }
-:root a:any-link:hover, :root a:any-link:focus-visible { color: var(--link-hover); }
+:root a:any-link:not(:where(.nav-links a, .social-icons a)) { color: var(--link); }
+:root a:any-link:not(:where(.nav-links a, .social-icons a)):hover,
+:root a:any-link:not(:where(.nav-links a, .social-icons a)):focus-visible { color: var(--link-hover); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
