@@ -1,7 +1,10 @@
 # Site icon
 
 `stormwind-banner.jpg` is the World of Warcraft Stormwind Banner item icon
-(`inv_bannerpvp_02`), used unmodified as the site's favicon.
+(`inv_bannerpvp_02`), retained as the reference for the site's favicon.
+
+`stormwind-lion.png` is a 64px transparent lion-only adaptation made with imagegen
+from that reference. It removes the flag and background and is the active favicon.
 
 - Item: https://www.wowhead.com/item=45011/stormwind-banner
 - Image: https://wow.zamimg.com/images/wow/icons/large/inv_bannerpvp_02.jpg

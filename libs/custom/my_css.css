@@ -1,7 +1,7 @@
 /* Quiet, spacious academic portfolio. Content continues to live in Jekyll/YAML. */
 :root {
   color-scheme: light;
-  --font-body: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-body: "Open Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --bg: #fef9ed;
   --surface: #fffcf5;
   --panel: #fbf4e5;
