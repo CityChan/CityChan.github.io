@@ -1,19 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var themeToggle = document.getElementById('darkToggle');
-  var themeIcon = document.getElementById('darkToggleIcon');
-  function syncTheme() {
-    var dark = document.documentElement.classList.contains('dark-mode');
-    themeToggle.setAttribute('aria-pressed', String(dark));
-    themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    themeIcon.className = 'fa ' + (dark ? 'fa-sun-o' : 'fa-moon-o');
-  }
-  syncTheme();
-  themeToggle.addEventListener('click', function () {
-    var dark = document.documentElement.classList.toggle('dark-mode');
-    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
-    syncTheme();
-  });
-
   var menuToggle = document.getElementById('menuToggle');
   var menu = document.getElementById('nav-links');
   function closeMenu() {
