@@ -85,8 +85,7 @@ img { max-width: 100%; }
 .portrait-frame { grid-area: portrait; justify-self: start; width: 100%; max-width: 310px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 8px 30px rgba(93,82,75,.06); }
 .portrait-frame img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.08; object-fit: cover; object-position: center 28%; }
 .bio-panel { padding: 30px 34px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); scroll-margin-top: 100px; }
-.bio-panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--subtle); margin-bottom: 12px; }
-.bio-panel p { font-size: 15px; line-height: 1.95; color: var(--muted); margin: 0; }
+.bio-panel p { font-size: 18px; line-height: 1.85; color: var(--muted); margin: 0; }
 .docs-section { padding: 0; margin: 82px 0 0; scroll-margin-top: 100px; border: 0; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
 .section-heading h2 { margin: 0; }
@@ -224,7 +223,7 @@ img { max-width: 100%; }
   .portrait-frame { grid-row: 2; justify-self: start; max-width: 100%; }
   .portrait-frame img { aspect-ratio: 1.5; object-position: center 12%; }
   .bio-panel { padding: 22px; }
-  .bio-panel p { font-size: 14px; }
+  .bio-panel p { font-size: 16px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 22px; }
   .research-grid { grid-template-columns: 1fr; gap: 12px; }
   .research-card { padding: 22px; }
