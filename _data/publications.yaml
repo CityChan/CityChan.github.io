@@ -35,7 +35,7 @@ papers:
 
   - title: "Quantized Gradient Projection for Memory-Efficient Continual Learning"
     year: 2026
-    authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang， Haris Vikalo"
+    authors: "Dongjun Kim, Seohyeon Cha, <b>Huancheng Chen</b>, Chianing Wang, Haris Vikalo"
     venue_short: "ICLR'26"
     venue: "International Conference on Learning Representation (poster)"
     paper_pdf: "https://openreview.net/pdf?id=xJtxpJ6QdD"
