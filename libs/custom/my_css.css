@@ -203,6 +203,8 @@ img { max-width: 100%; }
 .game-title { color: #c7d5e0; font-size: 22px; font-weight: 700; }
 .game-platform { color: #66c0f4; font-size: 14px; margin-top: 8px; }
 .game-icon { width: 16px; height: 16px; border-radius: 4px; vertical-align: middle; margin-right: 2px; }
+.lyric-quote { font-family: "Cormorant Garamond", Georgia, serif; font-size: 22px; font-style: italic; font-weight: 400; line-height: 1.6; }
+.album-lyric { margin-top: 28px; }
 
 @media (max-width: 900px) {
   .container { padding-left: 32px; padding-right: 32px; }

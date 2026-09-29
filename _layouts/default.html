@@ -16,11 +16,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  {% if page.title == 'Beyond Work' %}
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap" rel="stylesheet">
+  {% endif %}
   <link rel="stylesheet" href="{{ '/libs/external/skeleton/normalize.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/libs/external/skeleton/skeleton.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/libs/external/font-awesome-4.7.0/css/font-awesome.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/libs/external/academicons-1.8.6/css/academicons.min.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}?v=teaching-no-dates-1">
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | relative_url }}?v=lyric-font-1">
   <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/icons/stormwind-lion.png' | relative_url }}">
   <noscript><style>.nav-links { display: flex; } .nav-actions { display: none; }</style></noscript>
   <script src="{{ '/libs/external/jquery-3.1.1.min.js' | relative_url }}"></script>
