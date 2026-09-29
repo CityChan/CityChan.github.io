@@ -13,3 +13,7 @@ from that reference. It removes the flag and background and is the active favico
 - Item: https://www.wowhead.com/item=45011/stormwind-banner
 - Image: https://wow.zamimg.com/images/wow/icons/large/inv_bannerpvp_02.jpg
 - Artwork: Blizzard Entertainment; World of Warcraft and its artwork belong to their respective owners.
+
+The inline X brand icon in `_includes/icons/x.svg` is from Simple Icons (CC0):
+https://github.com/simple-icons/simple-icons/blob/develop/icons/x.svg
+Only presentation/accessibility attributes were adjusted; path data is unchanged.
