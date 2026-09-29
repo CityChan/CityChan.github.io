@@ -11,6 +11,8 @@
   --subtle: #786652;
   --line: #e4d8c5;
   --accent: #896341;
+  --link: #7652a1;
+  --link-hover: #593780;
   --accent-soft: #f7ecd9;
   --secondary-accent: #806643;
   --nav-bg: rgba(254,249,237,.94);
@@ -258,6 +260,9 @@ img { max-width: 100%; }
   .album-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .game-grid { grid-template-columns: 1fr; }
 }
+:root a:any-link { color: var(--link); }
+:root a:any-link:hover, :root a:any-link:focus-visible { color: var(--link-hover); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
