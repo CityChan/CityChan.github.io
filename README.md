@@ -1,3 +1,3 @@
-# Huancheng Chen's website
+# Personal Website
 
 Personal academic homepage built with Jekyll and hosted on GitHub Pages.
