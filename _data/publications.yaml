@@ -1,4 +1,11 @@
 papers:
+  - title: "SkillSpec: Consensus-Gated Agent Skill Evolution via Representation Specialization"
+    year: 2026
+    authors: "<b>Huancheng Chen</b>, Xiaodi Sun, Zhaoqiong Huang, Shenyang Huang, Shreya Singhal, Jingwen Lu"
+    venue: "arxiv"
+    paper_pdf: "https://arxiv.org/abs/2610.00704"
+    selected: n
+
   - title: "CacheRL: Multi-Turn Tool-Calling Agents via Cached Rollouts and Hybrid Reward"
     year: 2026
     authors: "Md Amirul Islam, Sumiran Thakur, <b>Huancheng Chen</b>, Su Min Park, Jiayun Wang, Gyuhak Kim"
