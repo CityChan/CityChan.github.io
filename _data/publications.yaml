@@ -1,4 +1,11 @@
 papers:
+  - title: "TalentRL: Strategy-Guided Reinforcement Learning for Hierarchical Skill Routing"
+    year: 2026
+    authors: "<b>Huancheng Chen</b>, Xiaodi Sun, Zhaoqiong Huang, Michelle Chang, Jingwen Lu"
+    venue: "arxiv"
+    paper_pdf: "https://arxiv.org/abs/2610.41143"
+    selected: n
+
   - title: "SkillSpec: Consensus-Gated Agent Skill Evolution via Representation Specialization"
     year: 2026
     authors: "<b>Huancheng Chen</b>, Xiaodi Sun, Zhaoqiong Huang, Shenyang Huang, Shreya Singhal, Jingwen Lu"
