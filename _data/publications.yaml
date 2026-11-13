@@ -22,12 +22,13 @@ papers:
     selected: n
 
   - title: "Foundation-Preserving Adaptation via Generalized Rayleigh-Quotient Optimization"
-    year: 2026
+    year: 2027
     authors: "Dongjun Kim, Adrian de Wynter, <b>Huancheng Chen</b>, Heasung Kim, Haris Vikalo"
-    venue: "arxiv"
+    venue_short: "EACL'27"
+    venue: "Conference of the European Chapter of the Association for Computational Linguistics (Main Track)"
     paper_pdf: "https://arxiv.org/abs/2606.00132"
     image: "/assets/img/papers/2026-arxiv-folora.png"
-    selected: n
+    selected: y
 
   - title: "Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory"
     year: 2026
